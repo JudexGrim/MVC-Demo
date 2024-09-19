@@ -1,0 +1,12 @@
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\BackendLibrary.deps.json
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\BackendLibrary.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\BackendLibrary.pdb
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\BackendLibrary.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\BackendLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\BackendLibrary.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\BackendLibrary.AssemblyInfo.cs
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\BackendLibrary.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\BackendLibrary.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\refint\BackendLibrary.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\BackendLibrary.pdb
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\ref\BackendLibrary.dll

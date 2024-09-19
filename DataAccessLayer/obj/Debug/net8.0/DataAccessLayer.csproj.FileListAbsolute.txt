@@ -1,0 +1,39 @@
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\DataAccessLayer.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\CoreLib.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\CoreLib.pdb
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\appsettings.json
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\EntityModels.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\ViewModels.dll
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\EntityModels.pdb
+C:\Users\USER\source\repos\Bruh1\BackendLibrary\bin\Debug\net8.0\ViewModels.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\bin\Debug\net8.0\appsettings.json
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\bin\Debug\net8.0\CoreLib.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\bin\Debug\net8.0\EntityModels.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\bin\Debug\net8.0\CoreLib.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\bin\Debug\net8.0\EntityModels.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll

@@ -1,0 +1,43 @@
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\BusinessLayer.deps.json
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\BusinessLayer.dll
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\BusinessLayer.pdb
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\Business.EA331CBA.Up2Date
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\CoreLib.dll
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\CoreLib.pdb
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\EntityModels.dll
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\ViewModels.dll
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\EntityModels.pdb
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\ViewModels.pdb
+C:\Users\USER\source\repos\Bruh1\BusinessLayer\bin\Debug\net8.0\appsettings.json
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\appsettings.json
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\BusinessLayer.deps.json
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\BusinessLayer.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\BusinessLayer.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\CoreLib.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\EntityModels.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\CoreLib.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\EntityModels.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\Business.EA331CBA.Up2Date
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
