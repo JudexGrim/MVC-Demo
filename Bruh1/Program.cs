@@ -10,7 +10,7 @@ namespace MVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            var config = builder.Configuration;
+
             var app = builder.Build();
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -29,7 +29,18 @@ namespace MVC
 
             app.MapControllerRoute(
                 name: "area",
-                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"); 
+                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+            app.MapAreaControllerRoute(
+                name: "ClientOperations",
+                areaName: "ClientOperations",
+                pattern: "ClientOperations/{controller=Client}/{action=Submission}/{id?}");
+
+            app.MapAreaControllerRoute(
+                name: "ItemOperations",
+                areaName: "ItemOperations",
+                pattern: "ItemOperations/{controller=Item}/{action=Submission}/{id?}");
+
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

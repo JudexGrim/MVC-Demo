@@ -6,3 +6,17 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success my-4">
+        <p class="text-dark text-center">@TempData["SuccessMessage"]</p>
+    </div>
+}
+
+@if (TempData["FailedMessage"] != null)
+{
+    <div class="alert alert-danger my-4">
+        <p class="text-dark text-center">@TempData["FailedMessage"]</p>
+    </div>
+}

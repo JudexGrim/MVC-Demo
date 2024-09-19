@@ -4,3 +4,17 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success my-4">
+        <p class="text-dark text-center">@TempData["SuccessMessage"]</p>
+    </div>
+}
+
+@if (TempData["FailedMessage"] != null)
+{
+    <div class="alert alert-danger my-4">
+        <p class="text-dark text-center">@TempData["FailedMessage"]</p>
+    </div>
+}

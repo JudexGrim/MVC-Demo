@@ -1,12 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
+using ProviderLayer.Processors;
 using System.Diagnostics;
+using ViewModels;
 
 namespace MVC.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;

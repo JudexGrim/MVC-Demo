@@ -15,8 +15,15 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: rgb(35, 39, 52);
+    color: rgb(247, 246, 241);
+}
+
+.navbar {
+  background-color: rgb(51, 32, 55)
 }

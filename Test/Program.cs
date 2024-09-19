@@ -11,11 +11,7 @@ namespace Test
             ClientProcessor Client = new ClientProcessor();
             ItemProcessor Item = new ItemProcessor();
 
-            var items = await ITem.GetAll();
-            foreach (var item in items)
-            {
-                Console.WriteLine($"{item.ID} | {item.Name} | {item.Price}");
-            }
+            await Client.Update(new Client { ID = 2, Name = "JohnWick", Type = 1 });
            
         }
     }
