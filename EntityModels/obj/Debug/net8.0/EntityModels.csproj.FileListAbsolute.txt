@@ -23,3 +23,16 @@ C:\Users\USER\Documents\GitHub Repos\MVC-Demo\EntityModels\obj\Debug\net8.0\Enti
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\EntityModels\obj\Debug\net8.0\refint\EntityModels.dll
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\EntityModels\obj\Debug\net8.0\EntityModels.pdb
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\EntityModels\obj\Debug\net8.0\ref\EntityModels.dll
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\bin\Debug\net8.0\EntityModels.deps.json
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\bin\Debug\net8.0\EntityModels.dll
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\bin\Debug\net8.0\EntityModels.pdb
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\EntityModels.csproj.AssemblyReference.cache
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\EntityModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\EntityModels.AssemblyInfoInputs.cache
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\EntityModels.AssemblyInfo.cs
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\EntityModels.csproj.CoreCompileInputs.cache
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\EntityModels.sourcelink.json
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\EntityModels.dll
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\refint\EntityModels.dll
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\EntityModels.pdb
+C:\Users\mohammad\Desktop\New folder\MVC-Demo\EntityModels\obj\Debug\net8.0\ref\EntityModels.dll

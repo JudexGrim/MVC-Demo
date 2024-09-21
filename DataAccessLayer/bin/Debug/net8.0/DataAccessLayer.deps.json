@@ -520,10 +520,7 @@
           "EntityModels": "1.0.0"
         },
         "runtime": {
-          "CoreLib.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "CoreLib.dll": {}
         }
       },
       "EntityModels/1.0.0": {
@@ -531,10 +528,7 @@
           "AutoMapper": "13.0.1"
         },
         "runtime": {
-          "EntityModels.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "EntityModels.dll": {}
         }
       }
     }

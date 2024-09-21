@@ -20,6 +20,12 @@ namespace MVC.Areas.ClientOperations.Controllers
             return View();
         }
 
+        public async Task<IActionResult> ViewAll() 
+        {
+            var Clients = await _clientProvider.GetAll();
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Submission(Client model)
         {

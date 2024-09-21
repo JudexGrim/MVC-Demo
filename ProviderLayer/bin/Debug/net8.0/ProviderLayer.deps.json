@@ -520,10 +520,7 @@
           "EntityModels": "1.0.0"
         },
         "runtime": {
-          "BusinessLayer.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BusinessLayer.dll": {}
         }
       },
       "CoreLib/1.0.0": {
@@ -532,10 +529,7 @@
           "EntityModels": "1.0.0"
         },
         "runtime": {
-          "CoreLib.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "CoreLib.dll": {}
         }
       },
       "DataAccessLayer/1.0.0": {
@@ -549,10 +543,7 @@
           "Microsoft.Extensions.Configuration.Json": "8.0.0"
         },
         "runtime": {
-          "DataAccessLayer.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "DataAccessLayer.dll": {}
         }
       },
       "EntityModels/1.0.0": {
@@ -560,10 +551,7 @@
           "AutoMapper": "13.0.1"
         },
         "runtime": {
-          "EntityModels.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "EntityModels.dll": {}
         }
       },
       "ViewModels/1.0.0": {
@@ -571,10 +559,7 @@
           "AutoMapper": "13.0.1"
         },
         "runtime": {
-          "ViewModels.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ViewModels.dll": {}
         }
       }
     }

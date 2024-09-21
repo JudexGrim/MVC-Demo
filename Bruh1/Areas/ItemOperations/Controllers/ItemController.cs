@@ -20,6 +20,12 @@ namespace MVC.Areas.ItemOperations.Controllers
             return View();
         }
 
+        public async Task<IActionResult> ViewAll()
+        {
+            var query = await _itemProvider.GetAll();
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Submission(Item model)
         {

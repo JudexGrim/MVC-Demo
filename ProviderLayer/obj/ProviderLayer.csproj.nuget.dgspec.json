@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ProviderLayer\\ProviderLayer.csproj": {}
+    "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ProviderLayer\\ProviderLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\mohammad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mohammad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,21 +22,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\CoreLib.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\CoreLib.csproj"
+              "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\CoreLib.csproj": {
+                "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\CoreLib.csproj"
               },
-              "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\EntityModels.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\EntityModels.csproj"
+              "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\EntityModels.csproj": {
+                "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\EntityModels.csproj"
               }
             }
           }
@@ -81,25 +76,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\CoreLib.csproj": {
+    "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\CoreLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\CoreLib.csproj",
+        "projectUniqueName": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\CoreLib.csproj",
         "projectName": "CoreLib",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\CoreLib.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\obj\\",
+        "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\CoreLib.csproj",
+        "packagesPath": "C:\\Users\\mohammad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mohammad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,15 +98,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\EntityModels.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\EntityModels.csproj"
+              "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\EntityModels.csproj": {
+                "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\EntityModels.csproj"
               }
             }
           }
@@ -156,25 +146,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\mohammad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mohammad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,15 +168,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\CoreLib.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\CoreLib.csproj"
+              "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\CoreLib.csproj": {
+                "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\CoreLib.csproj"
               }
             }
           }
@@ -251,25 +236,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\EntityModels.csproj": {
+    "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\EntityModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\EntityModels.csproj",
+        "projectUniqueName": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\EntityModels.csproj",
         "projectName": "EntityModels",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\EntityModels.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\obj\\",
+        "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\EntityModels.csproj",
+        "packagesPath": "C:\\Users\\mohammad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mohammad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -277,7 +258,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -322,25 +302,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ProviderLayer\\ProviderLayer.csproj": {
+    "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ProviderLayer\\ProviderLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ProviderLayer\\ProviderLayer.csproj",
+        "projectUniqueName": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ProviderLayer\\ProviderLayer.csproj",
         "projectName": "ProviderLayer",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ProviderLayer\\ProviderLayer.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ProviderLayer\\obj\\",
+        "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ProviderLayer\\ProviderLayer.csproj",
+        "packagesPath": "C:\\Users\\mohammad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ProviderLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mohammad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -348,24 +324,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\CoreLib.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\CoreLib\\CoreLib.csproj"
+              "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\CoreLib.csproj": {
+                "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\CoreLib\\CoreLib.csproj"
               },
-              "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\EntityModels.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\EntityModels\\EntityModels.csproj"
+              "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\EntityModels.csproj": {
+                "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\EntityModels\\EntityModels.csproj"
               },
-              "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\ViewModels.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\ViewModels.csproj"
+              "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ViewModels\\ViewModels.csproj"
               }
             }
           }
@@ -406,25 +381,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\ViewModels.csproj": {
+    "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ViewModels\\ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\ViewModels.csproj",
+        "projectUniqueName": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ViewModels\\ViewModels.csproj",
         "projectName": "ViewModels",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\ViewModels.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\obj\\",
+        "projectPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ViewModels\\ViewModels.csproj",
+        "packagesPath": "C:\\Users\\mohammad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mohammad\\Desktop\\New folder\\MVC-Demo\\ViewModels\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mohammad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -432,7 +403,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -477,7 +447,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

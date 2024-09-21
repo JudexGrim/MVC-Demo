@@ -17,51 +17,59 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVC
 build_property.RootNamespace = MVC
-build_property.ProjectDir = C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\
+build_property.ProjectDir = C:\Users\mohammad\Desktop\New folder\MVC-Demo\Bruh1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1
+build_property.MSBuildProjectDirectory = C:\Users\mohammad\Desktop\New folder\MVC-Demo\Bruh1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/BillOperations/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Areas/BillOperations/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmlsbE9wZXJhdGlvbnNcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ClientOperations/Views/Client/Submission.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Areas/ClientOperations/Views/Client/Submission.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50T3BlcmF0aW9uc1xWaWV3c1xDbGllbnRcU3VibWlzc2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ItemOperations/Views/Item/Submission.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Areas/ClientOperations/Views/Client/ViewAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50T3BlcmF0aW9uc1xWaWV3c1xDbGllbnRcVmlld0FsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Areas/ItemOperations/Views/Item/Submission.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXRlbU9wZXJhdGlvbnNcVmlld3NcSXRlbVxTdWJtaXNzaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Home/Index.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Areas/ItemOperations/Views/Item/ViewAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXRlbU9wZXJhdGlvbnNcVmlld3NcSXRlbVxWaWV3QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Home/Privacy.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/_ViewImports.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/_ViewStart.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/BillOperations/Views/Shared/_Layout.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Areas/BillOperations/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmlsbE9wZXJhdGlvbnNcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vxiqqn79th
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Shared/_Layout.cshtml]
+[C:/Users/mohammad/Desktop/New folder/MVC-Demo/Bruh1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-q0a04yuu0e
