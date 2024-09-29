@@ -1,4 +1,5 @@
-﻿@model ViewModels.Item;
+﻿@using MVC.Helpers
+@model ViewModels.Item;
 
 <tr id="row-@Model.ID" data-type="display">
     <td id="display-id">@Model.ID</td>
@@ -12,8 +13,8 @@
     </td>
 
     <td>
-        <button data-id="@Model.ID" type="button" id="edit-btn" onclick="Index.Edit(this)" class="btn-info rounded-1 px-3 py-1 text-decoration-none border-0">Edit</button>
-        <button data-id="@Model.ID" type="button" id="delete-btn" onclick="Index.DeleteItem(this)" class="btn-danger rounded-1 px-3 py-1 text-decoration-none border-0">Delete</button>
+        @CustomHtmlHelpers.EditButton("edit-btn", "Index.Edit(this)", new List<KeyValuePair<string,string>> {new ("id",Model.ID.ToString())})
+        @CustomHtmlHelpers.DeleteButton("delete-btn", "Index.Edit(this)", new List<KeyValuePair<string, string>> { new("id", Model.ID.ToString()) })
     </td>
 </tr>
 
@@ -22,17 +23,17 @@
     <td id="display-id">@Model.ID</td>
 
    <td>
-        @Html.TextBox("Name", Model.Name, new { @class = "form-control", @id="edit-name", @style = "", @onkeydown = "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")" })
+        @CustomHtmlHelpers.InputText(true, "edit-name", "Name", Model.Name, "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")")
         @Html.ValidationMessageFor(Model => Model.Name, "", new { @class = "text-danger" })
    </td>
 
    <td>
-        @Html.TextBox("Price", Model.Price, new { Type = "number", @id="edit-price", @class = "form-control", @style = "", @onkeydown = "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")" })
+        @CustomHtmlHelpers.InputNumber(true, "edit-price", "Price", Model.Price.ToString(), "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")", "0.01", "0")
         @Html.ValidationMessageFor(Model => Model.Price, "", new { @class="text-danger"})
    </td>
 
    <td> 
-    <button data-id="@Model.ID" type="submit" id="save-btn" onclick="Index.EditItem(this)" class="btn-success rounded-1 px-3 py-1 text-decoration-none border-0">Save</button>
-    <button data-id="@Model.ID" type="reset" id="cancel-btn" onclick="Index.Cancel(this)" class="btn-warning rounded-1 px-3 py-1 text-decoration-none border-0">Cancel</button>
+    @CustomHtmlHelpers.SaveButton("save-btn", "Index.EditItem(this)", new List<KeyValuePair<string,string>> {new ("id",Model.ID.ToString())})
+    @CustomHtmlHelpers.CancelButton("cancel-btn", "Index.EditItem(this)", new List<KeyValuePair<string, string>> { new("id", Model.ID.ToString()) })
    </td>
 </tr>

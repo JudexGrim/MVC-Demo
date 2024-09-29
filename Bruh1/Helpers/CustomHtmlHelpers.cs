@@ -33,10 +33,14 @@ namespace MVC.Helpers
             {
                 foreach (var selector in dataSelectors)
                 {
-                    tagBuilder.Attributes.Add(selector.Key, selector.Value);
+                    tagBuilder.Attributes.Add("data-" + selector.Key, selector.Value);
                 }
             }
-            return new HtmlString(tagBuilder.ToString());
+            using (var writer = new System.IO.StringWriter())
+            {
+                tagBuilder.WriteTo(writer, System.Text.Encodings.Web.HtmlEncoder.Default);
+                return new HtmlString(writer.ToString());
+            }
         }
 
         public static HtmlString CreateButton(string id = null, string onclick = null, IEnumerable<KeyValuePair<string, string>> dataSelectors = null)
@@ -64,10 +68,14 @@ namespace MVC.Helpers
             {
                 foreach (var selector in dataSelectors)
                 {
-                    tagBuilder.Attributes.Add(selector.Key, selector.Value);
+                    tagBuilder.Attributes.Add("data-" + selector.Key, selector.Value);
                 }
             }
-            return new HtmlString(tagBuilder.ToString());
+            using (var writer = new System.IO.StringWriter())
+            {
+                tagBuilder.WriteTo(writer, System.Text.Encodings.Web.HtmlEncoder.Default);
+                return new HtmlString(writer.ToString());
+            }
         }
 
         public static HtmlString DeleteButton(string id = null, string onclick = null, IEnumerable<KeyValuePair<string, string>> dataSelectors = null)
@@ -95,10 +103,14 @@ namespace MVC.Helpers
             {
                 foreach (var selector in dataSelectors)
                 {
-                    tagBuilder.Attributes.Add(selector.Key, selector.Value);
+                    tagBuilder.Attributes.Add("data-" + selector.Key, selector.Value);
                 }
             }
-            return new HtmlString(tagBuilder.ToString());
+            using (var writer = new System.IO.StringWriter())
+            {
+                tagBuilder.WriteTo(writer, System.Text.Encodings.Web.HtmlEncoder.Default);
+                return new HtmlString(writer.ToString());
+            }
         }
 
         public static HtmlString SaveButton(string id = null, string onclick = null, IEnumerable<KeyValuePair<string, string>> dataSelectors = null)
@@ -126,10 +138,14 @@ namespace MVC.Helpers
             {
                 foreach (var selector in dataSelectors)
                 {
-                    tagBuilder.Attributes.Add(selector.Key, selector.Value);
+                    tagBuilder.Attributes.Add("data-" + selector.Key, selector.Value);
                 }
             }
-            return new HtmlString(tagBuilder.ToString());
+            using (var writer = new System.IO.StringWriter())
+            {
+                tagBuilder.WriteTo(writer, System.Text.Encodings.Web.HtmlEncoder.Default);
+                return new HtmlString(writer.ToString());
+            }
         }
 
         public static HtmlString CancelButton(string id = null, string onclick = null, IEnumerable<KeyValuePair<string, string>> dataSelectors = null)
@@ -157,10 +173,14 @@ namespace MVC.Helpers
             {
                 foreach (var selector in dataSelectors)
                 {
-                    tagBuilder.Attributes.Add(selector.Key, selector.Value);
+                    tagBuilder.Attributes.Add("data-" + selector.Key, selector.Value);
                 }
             }
-            return new HtmlString(tagBuilder.ToString());
+            using (var writer = new System.IO.StringWriter())
+            {
+                tagBuilder.WriteTo(writer, System.Text.Encodings.Web.HtmlEncoder.Default);
+                return new HtmlString(writer.ToString());
+            }
         }
 
         public static HtmlString InputText(bool required, string id = null, string name = null, string value = null, string keyDownEvent = null, IEnumerable<KeyValuePair<string,string>> dataSelectors = null)
@@ -168,7 +188,7 @@ namespace MVC.Helpers
             TagBuilder tagBuilder = new TagBuilder("input");
 
             tagBuilder.Attributes.Add("type","text");
-            tagBuilder.Attributes.Add("class", "");
+            tagBuilder.Attributes.Add("class", "form-control d-block");
             tagBuilder.Attributes.Add("style", "");
 
             if (required)
@@ -200,10 +220,14 @@ namespace MVC.Helpers
             {
                 foreach (var selector in dataSelectors)
                 {
-                    tagBuilder.Attributes.Add(selector.Key, selector.Value);
+                    tagBuilder.Attributes.Add("data-" + selector.Key, selector.Value);
                 }
             }
-            return new HtmlString(tagBuilder.ToString());
+            using (var writer = new System.IO.StringWriter())
+            {
+                tagBuilder.WriteTo(writer, System.Text.Encodings.Web.HtmlEncoder.Default);
+                return new HtmlString(writer.ToString());
+            }
         }
 
         public static HtmlString InputNumber(bool required, string id = null, string name = null, string value = null, string keyDownEvent = null, string  decimalSteps = null, string minVal = null, string maxVal = null, IEnumerable<KeyValuePair<string, string>> dataSelectors = null)
@@ -211,7 +235,7 @@ namespace MVC.Helpers
             TagBuilder tagBuilder = new TagBuilder("input");
 
             tagBuilder.Attributes.Add("type", "number");
-            tagBuilder.Attributes.Add("class", "");
+            tagBuilder.Attributes.Add("class", "form-control d-block");
             tagBuilder.Attributes.Add("style", "");
 
             if (required)
@@ -258,10 +282,14 @@ namespace MVC.Helpers
             {
                 foreach (var selector in dataSelectors)
                 {
-                    tagBuilder.Attributes.Add(selector.Key, selector.Value);
+                    tagBuilder.Attributes.Add("data-" + selector.Key, selector.Value);
                 }
             }
-            return new HtmlString(tagBuilder.ToString());
+            using (var writer = new System.IO.StringWriter())
+            {
+                tagBuilder.WriteTo(writer, System.Text.Encodings.Web.HtmlEncoder.Default);
+                return new HtmlString(writer.ToString());
+            }
         }
     }
 }

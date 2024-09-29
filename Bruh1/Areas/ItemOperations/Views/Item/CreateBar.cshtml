@@ -1,11 +1,12 @@
-﻿@model ViewModels.Item
+﻿@using MVC.Helpers
+@model ViewModels.Item
 @{
     int maxID = ViewBag.maxID;
 }
 
 <tr id="create-btn" >
     <td style="border:0px">
-        <button type="button" onclick="Index.Create(this)" class="btn-primary rounded-1 px-3 py-1 text-decoration-none border-0">Create</button>
+        @CustomHtmlHelpers.CreateButton(onclick: "Index.Create(this)")
     </td>
 </tr>
 
@@ -14,16 +15,16 @@
         @maxID
     </td>
     <td style="border:0px" id="create-name">
-        @Html.TextBox("Name", "Name", new { @class = "", @style = "", @onkeydown = "Index.HandleKeyEvent(event, 'CreateItem')" })
+        @CustomHtmlHelpers.InputText(true, "edit-name", "Name","Name", "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")")
         @Html.ValidationMessageFor(Model => Model.Name, "", new { @class = "text-danger" })
     </td>
     <td style="border:0px" id="create-price">
-        @Html.TextBox("Price", "0.00", new { type = "number", @class = "", @style = "", @onkeydown = "Index.HandleKeyEvent(event, 'CreateItem')" })
+        @CustomHtmlHelpers.InputNumber(true, "edit-price", "Price", "0.00", "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")", "0.01", "0")
         @Html.ValidationMessageFor(Model => Model.Price, "", new { @class = "text-danger" })
     </td>
     <td style="border:0px" >
-        <button type="submit" id="save-btn" onclick="Index.CreateItem(this)" class="btn-success rounded-1 px-3 py-1 text-decoration-none border-0">Save</button>
-        <button type="reset" id="cancel-btn" onclick="Index.Cancel(this)" class=" .btn-warning rounded-1 px-3 py-1 text-decoration-none border-0 bg-warning">Cancel</button>
+        @CustomHtmlHelpers.SaveButton("save-btn", "Index.CreateItem(this)")
+        @CustomHtmlHelpers.CancelButton("cancel-btn", "Index.Cancel(this)")
     </td>
 </tr>
 
