@@ -517,7 +517,10 @@
           "EntityModels": "1.0.0"
         },
         "runtime": {
-          "CoreLib.dll": {}
+          "CoreLib.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DataAccessLayer/1.0.0": {
@@ -531,7 +534,10 @@
           "Microsoft.Extensions.Configuration.Json": "8.0.0"
         },
         "runtime": {
-          "DataAccessLayer.dll": {}
+          "DataAccessLayer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "EntityModels/1.0.0": {
@@ -539,7 +545,10 @@
           "AutoMapper": "13.0.1"
         },
         "runtime": {
-          "EntityModels.dll": {}
+          "EntityModels.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

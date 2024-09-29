@@ -11,11 +11,12 @@ namespace ProviderLayer.Processors
 {
     public class ItemProcessor : Disposer, IProviderProcessor<Item>
     {
-        public async Task<IEnumerable<Item>> GetAll()
+        public async Task<(IEnumerable<Item>, int maxID)> GetAll()
         {
             using (ItemBusiness Processor = new ItemBusiness())
             {
-                var entityItems = await Processor.GetAll();
+                var queryResult = await Processor.GetAll();
+                var entityItems = queryResult.Item1;
                 var viewItems = from r in entityItems
                                 select new Item
                                 {
@@ -23,11 +24,12 @@ namespace ProviderLayer.Processors
                                     Name = r.Name,
                                     Price = r.Price
                                 };
-                return viewItems;
+                var maxID = queryResult.maxID;
+                return (viewItems, maxID);
             }
         }
 
-        public async Task<int> Update(Item parameters)
+        public async Task<(bool success,long ID)> Update(Item parameters)
         {
             using ItemBusiness Processor = new ItemBusiness();
             var entityItem = new EntityModels.Item
@@ -36,16 +38,24 @@ namespace ProviderLayer.Processors
                                     Name = parameters.Name,
                                     Price = parameters.Price
                                 };
-                return await  Processor.Update(entityItem);
+            
+            return await Processor.Update(entityItem); 
+        }
+
+
+		public async Task<T> GetStock<T>(int id)
+        {
+            using ItemBusiness Processor = new ItemBusiness();
+            
+                return  await Processor.GetItemStock<T>(id);
             
         }
 
-        public async Task<T> GetStock<T>(int id)
-        {
-            using (ItemBusiness Processor = new ItemBusiness())
-            {
-                return  await Processor.GetItemStock<T>(id);
-            }
-        }
-    }
+		public async Task<int> Delete(int id)
+		{
+			using ItemBusiness Processor = new ItemBusiness();
+
+           return await Processor.Delete(id);
+		}
+	}
 }

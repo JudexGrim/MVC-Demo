@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int maxID = ViewBag.maxID;
+}
+@using MVC.Helpers
+@model IEnumerable<ViewModels.Item>
+
+<h2 class="text-center">Items</h2>
+
+@using (Html.BeginForm("Submission","Item", FormMethod.Post, new {  @onsubmit ="return false;", @id="submitForm"}))
+{
+    <table class="table text-light border-bottom-0">
+        <colgroup>
+            <col style=" width:10%" />
+            <col style=" width:30%" />
+            <col style=" width:20%" />
+            <col style=" width:20%" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                await Html.RenderPartialAsync("ItemSlice", item);
+            }
+
+            @{
+                await Html.RenderPartialAsync("CreateBar", Model.LastOrDefault());
+            }
+
+        </tbody>
+    </table>
+}
+
+    
+
+
+
+<script src="~/js/Scripts/Areas/ItemOperations/Views/Index.js"></script>
+ 

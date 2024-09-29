@@ -12,23 +12,41 @@ namespace BusinessLayer.BusinessProcessors
 {
     public class ClientBusiness : Disposer, IBusiness<Client>
     {
-        public async Task<IEnumerable<Client>> GetAll()
+        public async Task<(IEnumerable<Client>, int maxID)> GetAll()
         {
 
             using DAL DB = new DAL();
-            return await DB.ExecQuery<Client>("ViewAllClients");
-
+            var queryResult = await DB.ExecQuery<Client>("ViewAllClients");
+            int maxID = DB._params.Get<int>("");
+            return (queryResult, maxID);
         }
 
-        public async Task<int> Update(Client parameters)        
+        public async Task<(bool success, int ID)> Update(Client parameters)        
         {
             using DAL DB = new DAL();
             DB._params = new Dapper.DynamicParameters(parameters);
-            DB._params.Add("@ID", parameters.ID);
+            DB._params.Add("@ID", parameters.ID, dbType: DbType.Int64, direction: ParameterDirection.InputOutput);
             DB._params.Add("@Type", parameters.Type);
             DB._params.Add("@Name", parameters.Name);
-            return await DB.ExecNonQuery("Clients_CreateEdit");
+            bool success = await DB.ExecNonQuery("Clients_CreateEdit") != 0;
+            var ID = DB._params.Get<int>("@ID");
+
+            return (success, ID);
             
         }
-    }
+
+         public async Task<int> GetMaxID(string tableName)
+        {
+            using (DAL DB = new DAL())
+            {
+                return await DB.ExecScalar<int>($"EXEC GetMaxID '{tableName}'");
+            }
+        }
+
+		public async Task<int> Delete(int id)
+		{
+			using DAL DB = new DAL();
+            return await DB.ExecNonQuery($"EXEC Item_Delete @ID = {id}");
+		}
+	}
 }

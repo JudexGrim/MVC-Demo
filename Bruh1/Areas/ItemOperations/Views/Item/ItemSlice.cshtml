@@ -1,0 +1,38 @@
+﻿@model ViewModels.Item;
+
+<tr id="row-@Model.ID" data-type="display">
+    <td id="display-id">@Model.ID</td>
+
+    <td>
+        <span id="display-name">@Model.Name</span>
+    </td>
+
+    <td>
+        <span id="display-price">@Model.Price</span>
+    </td>
+
+    <td>
+        <button data-id="@Model.ID" type="button" id="edit-btn" onclick="Index.Edit(this)" class="btn-info rounded-1 px-3 py-1 text-decoration-none border-0">Edit</button>
+        <button data-id="@Model.ID" type="button" id="delete-btn" onclick="Index.DeleteItem(this)" class="btn-danger rounded-1 px-3 py-1 text-decoration-none border-0">Delete</button>
+    </td>
+</tr>
+
+<tr id="row-@Model.ID" data-type="edit" style="display:none">
+       
+    <td id="display-id">@Model.ID</td>
+
+   <td>
+        @Html.TextBox("Name", Model.Name, new { @class = "form-control", @id="edit-name", @style = "", @onkeydown = "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")" })
+        @Html.ValidationMessageFor(Model => Model.Name, "", new { @class = "text-danger" })
+   </td>
+
+   <td>
+        @Html.TextBox("Price", Model.Price, new { Type = "number", @id="edit-price", @class = "form-control", @style = "", @onkeydown = "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")" })
+        @Html.ValidationMessageFor(Model => Model.Price, "", new { @class="text-danger"})
+   </td>
+
+   <td> 
+    <button data-id="@Model.ID" type="submit" id="save-btn" onclick="Index.EditItem(this)" class="btn-success rounded-1 px-3 py-1 text-decoration-none border-0">Save</button>
+    <button data-id="@Model.ID" type="reset" id="cancel-btn" onclick="Index.Cancel(this)" class="btn-warning rounded-1 px-3 py-1 text-decoration-none border-0">Cancel</button>
+   </td>
+</tr>

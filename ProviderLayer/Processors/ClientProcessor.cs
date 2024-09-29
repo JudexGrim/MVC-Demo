@@ -11,13 +11,13 @@ namespace ProviderLayer.Processors
 {
     public class ClientProcessor : Disposer, IProviderProcessor<Client>
     {
-        public async Task<IEnumerable<Client>> GetAll()
+        public async Task<(IEnumerable<Client>, int maxID)> GetAll()
         {
             using (ClientBusiness Processor = new ClientBusiness())
             {
 
-                var entityClients = await Processor.GetAll();
-
+                var queryResult = await Processor.GetAll();
+                var entityClients = queryResult.Item1;
                 var viewClients = from r in entityClients
                             select new Client
                             {
@@ -26,12 +26,13 @@ namespace ProviderLayer.Processors
                                 Name = r.Name,
                                 Type = r.Type,
                             };
-
-                return viewClients;
+                int maxID = queryResult.maxID;
+                return (viewClients, maxID);
             }
         }
 
-        public async Task<int> Update(Client parameters)
+
+		public async Task<(bool success, long ID)> Update(Client parameters)
         {
             using ClientBusiness Processor = new ClientBusiness();
             var EntityClient = new EntityModels.Client
@@ -43,5 +44,12 @@ namespace ProviderLayer.Processors
             return await Processor.Update(EntityClient);
             
         }
-    }
+
+		public async Task<int> Delete(int id)
+		{
+			using ClientBusiness Processor = new ClientBusiness();
+
+            return await Processor.Delete(id);
+		}
+	}
 }

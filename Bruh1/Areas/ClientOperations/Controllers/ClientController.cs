@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVC.Controllers;
 using ProviderLayer.Processors;
 using ViewModels;
 
 namespace MVC.Areas.ClientOperations.Controllers
 {
     [Area("ClientOperations")]
-    public class ClientController : Controller
+    public class ClientController : BaseController
     {
         private readonly ILogger<ClientController> _logger;
         private readonly IProviderProcessor<Client> _clientProvider = new ClientProcessor();
@@ -14,17 +15,18 @@ namespace MVC.Areas.ClientOperations.Controllers
         {
             _logger = logger;
         }
+        public async Task<IActionResult> Index() 
+        {
+            // var model = await _clientProvider.GetAll();
+            var model = new ViewModels.Bills.Bill();
+            return View(model);
+        }
 
         public IActionResult Submission()
         {
             return View();
         }
 
-        public async Task<IActionResult> ViewAll() 
-        {
-            var Clients = await _clientProvider.GetAll();
-            return View();
-        }
 
         [HttpPost]
         public async Task<IActionResult> Submission(Client model)
@@ -32,10 +34,8 @@ namespace MVC.Areas.ClientOperations.Controllers
             if (ModelState.IsValid)
             {
                 await _clientProvider.Update(model);
-                TempData["SuccessMessage"] = "Your Request was Successfully Processed!";
                 return View();
             }
-            TempData["FailedMessage"] = "Invalid Info. Try Again.";
             return View();
         }
 

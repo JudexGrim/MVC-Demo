@@ -1,0 +1,30 @@
+﻿@model ViewModels.Item
+@{
+    int maxID = ViewBag.maxID;
+}
+
+<tr id="create-btn" >
+    <td style="border:0px">
+        <button type="button" onclick="Index.Create(this)" class="btn-primary rounded-1 px-3 py-1 text-decoration-none border-0">Create</button>
+    </td>
+</tr>
+
+<tr id="create" style="display:none" >
+    <td style="border:0px" id="create-id">
+        @maxID
+    </td>
+    <td style="border:0px" id="create-name">
+        @Html.TextBox("Name", "Name", new { @class = "", @style = "", @onkeydown = "Index.HandleKeyEvent(event, 'CreateItem')" })
+        @Html.ValidationMessageFor(Model => Model.Name, "", new { @class = "text-danger" })
+    </td>
+    <td style="border:0px" id="create-price">
+        @Html.TextBox("Price", "0.00", new { type = "number", @class = "", @style = "", @onkeydown = "Index.HandleKeyEvent(event, 'CreateItem')" })
+        @Html.ValidationMessageFor(Model => Model.Price, "", new { @class = "text-danger" })
+    </td>
+    <td style="border:0px" >
+        <button type="submit" id="save-btn" onclick="Index.CreateItem(this)" class="btn-success rounded-1 px-3 py-1 text-decoration-none border-0">Save</button>
+        <button type="reset" id="cancel-btn" onclick="Index.Cancel(this)" class=" .btn-warning rounded-1 px-3 py-1 text-decoration-none border-0 bg-warning">Cancel</button>
+    </td>
+</tr>
+
+    

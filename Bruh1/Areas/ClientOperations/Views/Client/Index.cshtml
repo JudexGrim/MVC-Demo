@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ViewModels.Client>
+@{ Layout = "~/Views/Shared/_Layout.cshtml";}
+
+<h2 class="text-center text-light">Clients</h2>
+<table class="table text-center text-light">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Edit</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		@foreach (var client in Model)
+		{
+			<tr>
+				<td>@client.ID</td>
+				<td>@client.Name</td>
+				<td>@client.Type</td>
+				<td><button class="btn-warning rounded-1 px-3 py-1 text-decoration-none border-0">Edit</button></td>
+			</tr>
+
+			<tr style="display:none">
+				<td>@client.ID</td>
+
+				<td>
+					<input type="text" asp-for="Name" name="Name"/>@client.Name
+				</td>
+
+				<td>
+					<input type="number" max="2" min="1" value="1" asp-for="Type" name="Type"/>@client.Type
+				</td>
+
+				<td>
+					<button class="btn-success rounded-1 px-3 py-1 text-decoration-none">Edit</button>
+				</td>
+
+				<td>
+					<button class="btn-danger rounded-1 px-3 py-1 text-decoration-none">Edit</button>
+				</td>
+			</tr>
+		}
+		<tr >
+			<td class="border-0"></td>
+			<td class="border-0"></td>
+			<td class="border-0"></td>
+			<td class="border-0"><button class="btn-primary rounded-1 px-3 py-1 text-decoration-none border-0">Create</button></td>
+		</tr>
+		
+	</tbody>
+</table>
