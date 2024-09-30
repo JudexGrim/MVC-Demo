@@ -14,7 +14,7 @@
 
     <td>
         @CustomHtmlHelpers.EditButton("edit-btn", "Index.Edit(this)", new List<KeyValuePair<string,string>> {new ("id",Model.ID.ToString())})
-        @CustomHtmlHelpers.DeleteButton("delete-btn", "Index.Edit(this)", new List<KeyValuePair<string, string>> { new("id", Model.ID.ToString()) })
+        @CustomHtmlHelpers.DeleteButton("delete-btn", "Index.Delete(this)", new List<KeyValuePair<string, string>> { new("id", Model.ID.ToString()) })
     </td>
 </tr>
 
@@ -32,8 +32,9 @@
         @Html.ValidationMessageFor(Model => Model.Price, "", new { @class="text-danger"})
    </td>
 
+
    <td> 
     @CustomHtmlHelpers.SaveButton("save-btn", "Index.EditItem(this)", new List<KeyValuePair<string,string>> {new ("id",Model.ID.ToString())})
-    @CustomHtmlHelpers.CancelButton("cancel-btn", "Index.EditItem(this)", new List<KeyValuePair<string, string>> { new("id", Model.ID.ToString()) })
+    @CustomHtmlHelpers.CancelButton("cancel-btn", "Index.Cancel(this)", new List<KeyValuePair<string, string>> { new("id", Model.ID.ToString()) })
    </td>
 </tr>

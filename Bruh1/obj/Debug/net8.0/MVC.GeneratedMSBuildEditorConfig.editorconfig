@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50T3BlcmF0aW9uc1xWaWV3c1xDbGllbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ItemOperations/Views/Item/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXRlbU9wZXJhdGlvbnNcVmlld3NcSXRlbVxDb25maXJtRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ItemOperations/Views/Item/CreateBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXRlbU9wZXJhdGlvbnNcVmlld3NcSXRlbVxDcmVhdGVCYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

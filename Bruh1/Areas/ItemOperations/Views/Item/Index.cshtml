@@ -9,6 +9,7 @@
 
 @using (Html.BeginForm("Submission","Item", FormMethod.Post, new {  @onsubmit ="return false;", @id="submitForm"}))
 {
+    @Html.AntiForgeryToken()
     <table class="table text-light border-bottom-0">
         <colgroup>
             <col style=" width:10%" />

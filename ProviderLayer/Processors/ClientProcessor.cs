@@ -45,11 +45,11 @@ namespace ProviderLayer.Processors
             
         }
 
-		public async Task<int> Delete(int id)
+		public async Task<bool> Delete(int id)
 		{
 			using ClientBusiness Processor = new ClientBusiness();
-
-            return await Processor.Delete(id);
+            bool success = await Processor.Delete(id) != 0;
+            return success;
 		}
 	}
 }

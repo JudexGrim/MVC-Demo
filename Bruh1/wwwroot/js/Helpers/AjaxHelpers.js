@@ -3,17 +3,18 @@
     {
         $.ajax({
             url: url,
-            type: "GET",
+            type: 'GET',
             success: successCallback,
             error: errorCallback
         })
     },
-    Post: function (url, data, successCallback, errorCallback)
+    Post: function (url, data, successCallback, errorCallback, headers=null)
     {
         $.ajax({
             url: url,
-            type: "POST",
+            type: 'POST',
             data: data,
+            headers: headers,
             success: successCallback,
             error: errorCallback
         })

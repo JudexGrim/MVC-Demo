@@ -58,16 +58,22 @@ namespace MVC.Areas.ItemOperations.Controllers
             return PartialView();
         }
 
+        public IActionResult ConfirmDelete(int id)
+        {
+            if (ModelState.IsValid)
+            ViewBag.id = id;
+            return PartialView();
+        }
 
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
             if (ModelState.IsValid)
             {
-                await _itemProvider.Delete(id);
-                return Ok();
+                bool isSucess = await _itemProvider.Delete(id);
+                return createresponse(isSucess, "Item Deleted Successfully.");
             }
-            return Json(new { success = false, message = "An  Error Occured." });
+            return createresponse(false, "Data Validation Failed.");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

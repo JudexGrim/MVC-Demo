@@ -11,6 +11,6 @@ namespace ProviderLayer.Processors
     {
         Task<(IEnumerable<T>, int maxID)> GetAll();
 		Task<(bool success,long ID)> Update(T parameters);
-        Task<int> Delete(int id);
+        Task<bool> Delete(int id);
     }
 }

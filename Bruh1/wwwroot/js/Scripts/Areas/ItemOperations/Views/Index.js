@@ -82,10 +82,13 @@
         //Hide Create Options if Shown
         $('#create-btn').show();
         $('tr#create').hide();
+
+        $('#confirmDelete-' + id).modal('hide');
     },
 
     EditItem: function (button) 
     {
+        var token = $('input[name="__RequestVerificationToken"]').val();
         if (!$('#submitForm').valid())
         {
             return;
@@ -97,6 +100,8 @@
             Name: $('#row-' + id + ' #edit-name').val(),
             Price: $('#row-' + id + ' #edit-price').val()
         }
+
+        var headers = {'RequestVerificationToken' : token}
 
         //Ajax Success Callback
         var success = function (response) {
@@ -113,13 +118,15 @@
         //Ajax Error Callback
         var error = function (response) {
             alert('Ajax Failure.');
+            console.log('oops ' + response)
         }
 
-        AjaxHelpers.Post('Submission', formData, success, error);
+        AjaxHelpers.Post('Submission', formData, success, error, headers);
     },
 
     CreateItem: function (button) 
     {
+        var token = $('input[name="__RequestVerificationToken"]').val();
         if (!$('#submitForm').valid()) {
             return;
         }
@@ -132,6 +139,8 @@
             Name: name,
             Price: price
         }
+
+        var headers = { 'RequestVerificationToken': token }
 
         var success = function (response) {
 
@@ -160,27 +169,46 @@
             alert('Ajax Failure.');
         }
 
-        AjaxHelpers.Post("Submission",formData, success, error);
+        AjaxHelpers.Post("Submission",formData, success, error, headers);
+    },
+
+    Delete: function (button)
+    {
+        var id = button.dataset.id;
+
+        var formData = { ID: id }
+        $.ajax({
+            url:"ConfirmDelete",
+            type: "POST",
+            data: formData,
+            success: (response) => { $('#row-' + id).before(response); $('#confirmDelete-' + id).modal(); $('#confirmDelete-' + id).modal('show'); },
+            error: (response) => console.log(response)
+        })
+        
     },
 
     DeleteItem: function (button) 
     {
         var id = button.dataset.id;
+        var token = $('input[name="__RequestVerificationToken"]').val();
 
         //Create Model Form
         var formData = {
             id:id,
         }
 
+        var headers = {'RequestVerificationToken': token}
+
         var success = function (response) {
 
             $('#row-' + id).hide();
+            $('#confirmDelete-' + id).modal('hide');
         }
 
         var error = function (response) {
             alert('Ajax Failure.');
         }
 
-        AjaxHelpers.Post('Delete', formData, success, error);
+        AjaxHelpers.Post('Delete', formData, success, error, headers);
     }
 }
