@@ -30,6 +30,7 @@ namespace MVC.Areas.ItemOperations.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
             public async Task<IActionResult> Submission(Item model)
             {
                 if (ModelState.IsValid)
@@ -66,6 +67,7 @@ namespace MVC.Areas.ItemOperations.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
             if (ModelState.IsValid)

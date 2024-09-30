@@ -127,49 +127,39 @@
     CreateItem: function (button) 
     {
         var token = $('input[name="__RequestVerificationToken"]').val();
-        if (!$('#submitForm').valid()) {
-            return;
-        }
-        //Create Form Data
+
         var id = $('#create-id').text().trim();
         var name = $('#create-name input').val();
         var price = $('#create-price input').val();
+
+        if (!$('#submitForm').valid()) {
+            return;
+        }
+
         var formData = {
             ID: id,
             Name: name,
             Price: price
         }
 
-        var headers = { 'RequestVerificationToken': token }
-
-        var success = function (response) {
-
-            var newSlice = {
-                ID: response.data.model.id,
-                Name: response.data.model.name,
-                Price: parseFloat(response.data.model.price).toFixed(2)
-            }
-
-            var InsertSlice = function (response) {
-
-                $('#create-btn').before(response);
-            }
-
-            id = response.data.maxID + 1;
-            
-            $('#create-id').text(id);
-            $('#create-btn').show();
-            $('#create').hide();
-           
-            AjaxHelpers.Post("ItemSlice", newSlice, InsertSlice, function (response) { alert('baddd') });
-
+        var settings = {
+            url: 'Submission',
+            methodType: 'POST',
+            data: formData,
+            token: token,
+            target: '#create-btn',
+            appendType: 'before',
+            view: 'ItemSlice',
+            viewType: 'POST',
+            PartialViewMapping: formData
         }
 
-        var error = function (response) {
-            alert('Ajax Failure.');
-        }
-
-        AjaxHelpers.Post("Submission",formData, success, error, headers);
+        AjaxHelpers.LoadPartial(settings);
+        id++;
+        $('#create-id').text(id);
+        $('#create-btn').show();
+        $('#create').hide();
+        
     },
 
     Delete: function (button)
