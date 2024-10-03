@@ -149,8 +149,7 @@
             token: token,
             target: '#create-btn',
             appendType: 'before',
-            view: 'ItemSlice',
-            viewType: 'POST',
+            viewResponse: 'ItemSlice',
             PartialViewMapping: formData
         }
 
@@ -168,7 +167,7 @@
 
         var formData = { ID: id }
         $.ajax({
-            url:"ConfirmDelete",
+            url: '/Home/ConfirmDelete',
             type: "POST",
             data: formData,
             success: (response) => { $('#row-' + id).before(response); $('#confirmDelete-' + id).modal(); $('#confirmDelete-' + id).modal('show'); },

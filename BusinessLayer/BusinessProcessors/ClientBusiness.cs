@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CoreLib;
 using System.Data;
+using Dapper;
 
 namespace BusinessLayer.BusinessProcessors
 {
@@ -16,16 +17,19 @@ namespace BusinessLayer.BusinessProcessors
         {
 
             using DAL DB = new DAL();
+
+            DB._params = new DynamicParameters();
+            DB._params.Add("@maxID", dbType: DbType.Int32, direction:ParameterDirection.Output);
             var queryResult = await DB.ExecQuery<Client>("ViewAllClients");
-            int maxID = DB._params.Get<int>("");
+            int maxID = DB._params.Get<int>("@maxID");
             return (queryResult, maxID);
         }
 
         public async Task<(bool success, int ID)> Update(Client parameters)        
         {
             using DAL DB = new DAL();
-            DB._params = new Dapper.DynamicParameters(parameters);
-            DB._params.Add("@ID", parameters.ID, dbType: DbType.Int64, direction: ParameterDirection.InputOutput);
+            DB._params = new DynamicParameters();
+            DB._params.Add("@ID", parameters.ID, dbType: DbType.Int32, direction: ParameterDirection.InputOutput);
             DB._params.Add("@Type", parameters.Type);
             DB._params.Add("@Name", parameters.Name);
             bool success = await DB.ExecNonQuery("Clients_CreateEdit") != 0;
@@ -46,7 +50,7 @@ namespace BusinessLayer.BusinessProcessors
 		public async Task<int> Delete(int id)
 		{
 			using DAL DB = new DAL();
-            return await DB.ExecNonQuery($"EXEC Item_Delete @ID = {id}");
+            return await DB.ExecNonQuery($"EXEC Client_Delete @ID = {id}");
 		}
 	}
 }

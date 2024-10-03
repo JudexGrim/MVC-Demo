@@ -82,7 +82,7 @@ namespace MVC.Helpers
         {
             TagBuilder tagBuilder = new TagBuilder("Button");
             tagBuilder.InnerHtml.SetContent("Delete");
-            tagBuilder.Attributes.Add("type", "button");
+            tagBuilder.Attributes.Add("type", "submit");
 
             tagBuilder.Attributes.Add("class", "btn-danger rounded-1 px-3 py-1 text-decoration-none border-0");
             tagBuilder.Attributes.Add("style", "");

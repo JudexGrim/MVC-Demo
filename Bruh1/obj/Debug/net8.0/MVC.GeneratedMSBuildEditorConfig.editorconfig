@@ -30,12 +30,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmlsbE9wZXJhdGlvbnNcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ClientOperations/Views/Client/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50T3BlcmF0aW9uc1xWaWV3c1xDbGllbnRcSW5kZXguY3NodG1s
+[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ClientOperations/Views/Client/ClientSlice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50T3BlcmF0aW9uc1xWaWV3c1xDbGllbnRcQ2xpZW50U2xpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ItemOperations/Views/Item/ConfirmDelete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXRlbU9wZXJhdGlvbnNcVmlld3NcSXRlbVxDb25maXJtRGVsZXRlLmNzaHRtbA==
+[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ClientOperations/Views/Client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50T3BlcmF0aW9uc1xWaWV3c1xDbGllbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ItemOperations/Views/Item/CreateBar.cshtml]
@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Areas/ItemOperations/Views/Item/ItemSlice.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXRlbU9wZXJhdGlvbnNcVmlld3NcSXRlbVxJdGVtU2xpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Home/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maXJtRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Home/Index.cshtml]

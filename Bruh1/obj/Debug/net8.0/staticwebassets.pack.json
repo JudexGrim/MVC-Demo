@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\Helpers\\AjaxHelpers.js"
     },
     {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Areas\\ClientOperations\\Views\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Scripts\\Areas\\ClientOperations\\Views\\Index.js"
+    },
+    {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Areas\\ItemOperations\\Views\\Index.js",
       "PackagePath": "staticwebassets\\js\\Scripts\\Areas\\ItemOperations\\Views\\Index.js"
     },

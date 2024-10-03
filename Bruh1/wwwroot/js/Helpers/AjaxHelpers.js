@@ -19,7 +19,7 @@
             error: errorCallback
         })
     },
-
+   
     LoadPartial: function (data)
     {
         var settings = {
@@ -29,8 +29,7 @@
             token: null,
             target:null,
             appendType: 'after',
-            view: null,
-            viewType: null,
+            viewResponse: null,
             PartialViewMapping: null
         }
 
@@ -62,9 +61,9 @@
                 if (['GET', 'POST', 'PUT', 'DELETE'].includes(ajaxParams.methodType.toUpperCase())) {
 
                     //Check if Request Wants to Submit data
-                    if (ajaxParams.data && ajaxParams.view) {
+                    if (ajaxParams.data && ajaxParams.viewResponse) {
 
-                        //Submit Ajax Call
+                        //Submission Ajax Call
                         $.ajax({
                             url: ajaxParams.url,
                             type: ajaxParams.methodType,
@@ -78,7 +77,7 @@
                                 if (ajaxParams.PartialViewMapping) {
 
                                     $.ajax({
-                                        url: ajaxParams.view,
+                                        url: ajaxParams.viewResponse,
                                         type: 'POST',
                                         data: ajaxParams.PartialViewMapping,
                                         success: function (response) {
@@ -90,7 +89,7 @@
                                 //If No Mapping Is Needed, Just Do a normal return
                                 else 
                                 $.ajax({
-                                    url: ajaxParams.view,
+                                    url: ajaxParams.viewResponse,
                                     type: 'GET',
                                     success: function (response) {
                                         AppendView(ajaxParams.appendType, response, ajaxParams.target)
@@ -107,7 +106,7 @@
 
                         //Load Partial View
                         $.ajax({
-                            url: ajaxParams.view,
+                            url: ajaxParams.viewResponse,
                             type: 'GET',
                             success: function (response) {
                                 AppendView(ajaxParams.appendType, response, ajaxParams.target)

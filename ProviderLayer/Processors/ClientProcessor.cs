@@ -32,7 +32,7 @@ namespace ProviderLayer.Processors
         }
 
 
-		public async Task<(bool success, long ID)> Update(Client parameters)
+		public async Task<(bool success, int ID)> Update(Client parameters)
         {
             using ClientBusiness Processor = new ClientBusiness();
             var EntityClient = new EntityModels.Client

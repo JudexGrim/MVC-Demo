@@ -59,13 +59,6 @@ namespace MVC.Areas.ItemOperations.Controllers
             return PartialView();
         }
 
-        public IActionResult ConfirmDelete(int id)
-        {
-            if (ModelState.IsValid)
-            ViewBag.id = id;
-            return PartialView();
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)

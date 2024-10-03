@@ -78,15 +78,6 @@ C:\Users\USER\source\repos\Bruh1\Test\bin\Debug\net8.0\appsettings.json
 C:\Users\USER\source\repos\Bruh1\Test\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\USER\source\repos\Bruh1\Test\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\USER\source\repos\Bruh1\Test\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.dll
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\refint\Test.dll
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.pdb
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.csproj.AssemblyReference.cache
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.AssemblyInfoInputs.cache
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.AssemblyInfo.cs
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.csproj.CoreCompileInputs.cache
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.sourcelink.json
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\bin\Debug\net8.0\Test.exe
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\bin\Debug\net8.0\appsettings.json
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\bin\Debug\net8.0\Test.deps.json
@@ -156,6 +147,15 @@ C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\bin\Debug\net8.0\CoreLib.pdb
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\bin\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\bin\Debug\net8.0\EntityModels.pdb
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\bin\Debug\net8.0\ViewModels.pdb
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.AssemblyInfo.cs
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.sourcelink.json
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.csproj.Up2Date
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\refint\Test.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.pdb
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\Test.genruntimeconfig.cache
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Test\obj\Debug\net8.0\ref\Test.dll

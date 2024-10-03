@@ -11,7 +11,7 @@ namespace Test
             ClientProcessor Client = new ClientProcessor();
             ItemProcessor Item = new ItemProcessor();
 
-            await Client.Update(new Client { ID = 2, Name = "JohnWick", Type = 1 });
+            await Client.Update(new Client { ID = 2, Name = "bruhbruh", Type = "Seller" });
            
         }
     }

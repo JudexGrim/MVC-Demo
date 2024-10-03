@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H11y4Xvpfv+xuPYyCuNhBQDzl5V0g/txty79q8Hz5eA=",
+  "Hash": "IKxNeUBsKEfLJoEN+xUJbip/YPkJdMD8x5qq2lr/BGs=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Helpers\\AjaxHelpers.js"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Areas\\ClientOperations\\Views\\Index.js",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "js/Scripts/Areas/ClientOperations/Views/Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Scripts\\Areas\\ClientOperations\\Views\\Index.js"
     },
     {
       "Identity": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Areas\\ItemOperations\\Views\\Index.js",

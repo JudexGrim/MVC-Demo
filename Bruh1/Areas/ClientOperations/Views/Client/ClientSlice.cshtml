@@ -1,0 +1,47 @@
+﻿@using MVC.Helpers.RazorTagHelpers
+@addTagHelper *, MVC
+@model ViewModels.Client
+@{List<KeyValuePair<string, string>> typeOptions = new List<KeyValuePair<string, string>> { new("Buyer","Buyer"), new("Seller","Seller")};}
+
+<tr id="row-@Model.ID" data-type="display" >
+    
+    <td>
+        <span id="display-id">@Model.ID</span>
+    </td>
+
+    
+    <td>
+        <span id="display-name">@Model.Name</span>
+    </td>
+
+    <td>
+        <span id="display-type">@Model.Type</span>
+    </td>
+
+    <td>
+        <EditButton data-id="@Model.ID"></EditButton>
+        <DeleteButton data-id="@Model.ID"></DeleteButton>
+    </td>
+</tr>
+
+
+<tr id="row-@Model.ID" data-type="edit" style="display: none">
+   
+    <td>
+        <span id="display-id">@Model.ID</span>
+    </td>
+
+    <td>
+        <TextBox id="edit-name" name="Name" value="@Model.Name" required="required" data-id="@Model.ID"></TextBox>
+        @Html.ValidationMessageFor(Model => Model.Name, "", new { @class = "text-danger" })
+    </td>
+
+    <td>
+        <Dropdown id="edit-type" Name="Type" options="typeOptions"></Dropdown>
+    </td>
+
+    <td>
+        <SaveButton data-id="@Model.ID"></SaveButton>
+        <CancelButton data-id="@Model.ID"></CancelButton>
+    </td>
+</tr>

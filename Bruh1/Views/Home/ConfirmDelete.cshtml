@@ -2,7 +2,7 @@
 @{
     int id = ViewBag.id;
 }
-<div class="modal fade" tabindex="-1" id="confirmDelete-@ViewBag.id">
+<div class="modal fade" tabindex="-1" id="confirmDelete-@id" data-id="@id">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -10,7 +10,7 @@
             </div>
                 <div class="modal-body text-dark"> Are You Sure You Want To Delete This Entry?</div>
             <div class="modal-footer">
-                @CustomHtmlHelpers.DeleteButton("delete-btn", "Index.DeleteItem(this)", new List<KeyValuePair<string, string>> { new("id", ViewBag.id.ToString()) })
+                @CustomHtmlHelpers.DeleteButton("confirmDelete-btn", "Index.DeleteItem(this)", new List<KeyValuePair<string, string>> { new("id", ViewBag.id.ToString()) })
                 @CustomHtmlHelpers.CancelButton("cancel-btn", "Index.Cancel(this)", new List<KeyValuePair<string, string>> { new("id", ViewBag.id.ToString()) })
             </div>
         </div>

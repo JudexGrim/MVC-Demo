@@ -1,53 +1,62 @@
-﻿@model IEnumerable<ViewModels.Client>
-@{ Layout = "~/Views/Shared/_Layout.cshtml";}
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int maxID = ViewBag.maxID;
+    List<KeyValuePair<string, string>> typeOptions = new List<KeyValuePair<string, string>> { new("Buyer","Buyer"), new("Seller","Seller")};
+}
+@model IEnumerable<ViewModels.Client>
+@addTagHelper *, MVC
 
-<h2 class="text-center text-light">Clients</h2>
-<table class="table text-center text-light">
-	<thead>
-		<tr>
-			<th>ID</th>
-			<th>Name</th>
-			<th>Type</th>
-			<th>Edit</th>
-		</tr>
-	</thead>
+<h1>Clients</h1>
+@using (Html.BeginForm("Submission", "Client", FormMethod.Post, new { @onsubmit = "return false", id = "submit-form" }))
+{
+    @Html.AntiForgeryToken()
+    <table class="table text-light">
+    <colgroup>
+        <col style="width: 10%" />
+        <col style="width: 40%" />
+        <col style="width: 30%" />
+        <col style="width: 20%"/>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var client in Model)
+        {
+            await Html.RenderPartialAsync("ClientSlice", client);
+        }
 
-	<tbody>
-		@foreach (var client in Model)
-		{
-			<tr>
-				<td>@client.ID</td>
-				<td>@client.Name</td>
-				<td>@client.Type</td>
-				<td><button class="btn-warning rounded-1 px-3 py-1 text-decoration-none border-0">Edit</button></td>
-			</tr>
+        <tr id="row-create" style="display:none">
+            <td>
+                <span id="create-id">@maxID</span>
+            </td>
+            
+            <td>
+                <TextBox id="create-name" name="Name" value="Name" required="required"></TextBox>
+                    @Html.ValidationMessageFor(Model => Model.LastOrDefault().Name, "", new { @class = "text-danger" })
+                </td>
+            
+            <td>
+                <Dropdown id="create-type" name="Type" options="typeOptions" class="form-control"></Dropdown>
+            </td>
+            
+            <td>
+                <SaveButton></SaveButton>
+                <CancelButton></CancelButton>
+            </td>
+        </tr>
 
-			<tr style="display:none">
-				<td>@client.ID</td>
-
-				<td>
-					<input type="text" asp-for="Name" name="Name"/>@client.Name
-				</td>
-
-				<td>
-					<input type="number" max="2" min="1" value="1" asp-for="Type" name="Type"/>@client.Type
-				</td>
-
-				<td>
-					<button class="btn-success rounded-1 px-3 py-1 text-decoration-none">Edit</button>
-				</td>
-
-				<td>
-					<button class="btn-danger rounded-1 px-3 py-1 text-decoration-none">Edit</button>
-				</td>
-			</tr>
-		}
-		<tr >
-			<td class="border-0"></td>
-			<td class="border-0"></td>
-			<td class="border-0"></td>
-			<td class="border-0"><button class="btn-primary rounded-1 px-3 py-1 text-decoration-none border-0">Create</button></td>
-		</tr>
-		
-	</tbody>
+        <tr id="row-create-btn">
+                <td style="border: 0px"><CreateButton></CreateButton></td>
+            
+        </tr>
+    </tbody>
 </table>
+}
+
+<script src="~/js/Scripts/Areas/ClientOperations/Views/Index.js"></script>

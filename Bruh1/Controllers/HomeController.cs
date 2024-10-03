@@ -24,6 +24,13 @@ namespace MVC.Controllers
             return View();
         }
 
+        public IActionResult ConfirmDelete(int id)
+        {
+            if (ModelState.IsValid)
+                ViewBag.id = id;
+            return PartialView();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

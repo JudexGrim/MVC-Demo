@@ -29,7 +29,7 @@ namespace ProviderLayer.Processors
             }
         }
 
-        public async Task<(bool success,long ID)> Update(Item parameters)
+        public async Task<(bool success,int ID)> Update(Item parameters)
         {
             using ItemBusiness Processor = new ItemBusiness();
             var entityItem = new EntityModels.Item

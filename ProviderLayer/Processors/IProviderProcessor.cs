@@ -10,7 +10,7 @@ namespace ProviderLayer.Processors
     public interface IProviderProcessor<T> where T: IViewModel
     {
         Task<(IEnumerable<T>, int maxID)> GetAll();
-		Task<(bool success,long ID)> Update(T parameters);
+		Task<(bool success,int ID)> Update(T parameters);
         Task<bool> Delete(int id);
     }
 }
