@@ -19,11 +19,59 @@ html {
 }
 
 body {
+    color: black;
     margin-bottom: 60px;
-    background-color: rgb(35, 39, 52);
-    color: rgb(247, 246, 241);
+    background-image: url("../Media/Images/Background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.navbar {
-  background-color: rgb(51, 32, 55)
+.navbar-sticky {
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: whitesmoke;
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+    
+}
+
+.main-headline{
+  font-family: Ubuntu;
+  font-weight: bold;
+}
+
+.secondary-headline {
+  font-family: 'Ubuntu';
+}
+
+.link {
+    font-family: 'Ubuntu';
+    font-size: x-large;
+}
+
+.link-light {
+    color: whitesmoke;
+}
+
+.link-dark {
+    color: black;
+}
+
+.background-container{
+    padding: 5%;
+    width: 100%;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.background-container-dark{
+    background-color: rgba(11, 97, 48, 0.4);
+}
+
+.background-container-light{
+    background-color: whitesmoke;
 }

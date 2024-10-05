@@ -4,13 +4,13 @@
 }
 @using MVC.Helpers
 @model IEnumerable<ViewModels.Item>
-
+<div style></div>
+<div class="background-container background-container-light">
 <h2 class="text-center">Items</h2>
-
 @using (Html.BeginForm("Submission","Item", FormMethod.Post, new {  @onsubmit ="return false;", @id="submitForm"}))
 {
     @Html.AntiForgeryToken()
-    <table class="table text-light border-bottom-0">
+    <table class="table text-dark border-bottom-0">
         <colgroup>
             <col style=" width:10%" />
             <col style=" width:30%" />
@@ -40,6 +40,6 @@
         </tbody>
     </table>
 } 
-
+</div>
 <script src="~/js/Scripts/Areas/ItemOperations/Views/Index.js"></script>
  

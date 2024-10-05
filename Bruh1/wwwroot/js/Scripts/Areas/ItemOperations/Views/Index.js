@@ -137,7 +137,7 @@
         }
 
         var formData = {
-            ID: id,
+            ID: 0,
             Name: name,
             Price: price
         }
@@ -150,7 +150,11 @@
             target: '#create-btn',
             appendType: 'before',
             viewResponse: 'ItemSlice',
-            PartialViewMapping: formData
+            PartialViewMapping: {
+                ID: id,
+                Name: name,
+                Price: price
+            }
         }
 
         AjaxHelpers.LoadPartial(settings);

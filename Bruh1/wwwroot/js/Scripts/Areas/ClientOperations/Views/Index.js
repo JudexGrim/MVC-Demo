@@ -92,7 +92,7 @@
         $(`#confirmDelete-${id}`).modal('hide')
     },
 
-    EditItem: function (button) {
+    EditClient: function (button) {
 
         var id = button.dataset.id
         var token = document.querySelector('input[name="__RequestVerificationToken"]').value
@@ -126,7 +126,7 @@
         })
     },
 
-    CreateItem: function (button) {
+    CreateClient: function (button) {
 
         var id = document.getElementById('create-id').innerHTML
 
@@ -138,7 +138,7 @@
         var token = document.querySelector('input[name="__RequestVerificationToken"]').value
 
         var formData = {
-            ID: id,
+            ID: 0,
             Name: document.getElementById(`create-name`).value,
             Type: document.getElementById(`create-type`).value
         }
@@ -151,7 +151,11 @@
             target: "#row-create",
             appendType: 'before',
             viewResponse: "ClientSlice",
-            PartialViewMapping: formData
+            PartialViewMapping: {
+                ID: id,
+                Name: document.getElementById(`create-name`).value,
+                Type: document.getElementById(`create-type`).value
+            }
         }
 
         //Insert New Slice
@@ -163,7 +167,7 @@
 
     },
 
-    DeleteItem: function (button) {
+    DeleteClient: function (button) {
 
         var id = button.dataset.id
 
@@ -201,11 +205,11 @@
 
         document.querySelectorAll('#cancel-btn').forEach((button) => button.addEventListener('click', () => Index.Cancel(button)))
 
-        document.querySelectorAll('#save-btn').forEach((button) => {if(button.closest('#row-create') === null) button.addEventListener('click', () => Index.EditItem(button))})
+        document.querySelectorAll('#save-btn').forEach((button) => {if(button.closest('#row-create') === null) button.addEventListener('click', () => Index.EditClient(button))})
 
-        document.querySelectorAll('#row-create #save-btn').forEach((button) => button.addEventListener('click', () => Index.CreateItem(button)))
+        document.querySelectorAll('#row-create #save-btn').forEach((button) => button.addEventListener('click', () => Index.CreateClient(button)))
 
-        document.querySelectorAll('#confirmDelete #delete-btn').forEach((button) => button.addEventListener('click', () => Index.DeleteItem(button)))
+        document.querySelectorAll('#confirmDelete #delete-btn').forEach((button) => button.addEventListener('click', () => Index.DeleteClient(button)))
 
         document.querySelectorAll('input').forEach((input) => input.addEventListener('keydown', Index.HandleKeyEvent))
     }

@@ -50,6 +50,8 @@
 
                         case 'insert': $(target).append(view);
                             break;
+                        case 'replace': $(target).empty(view); $(target).html(view);
+                            break;
                         default: $(target).html(view);
                             break;
                     }
