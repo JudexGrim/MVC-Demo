@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9B8C8EB0-0694-4E30-8B03-87822F8ECE11}|Test\\Test.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B8C8EB0-0694-4E30-8B03-87822F8ECE11}|Test\\Test.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\wwwroot\\js\\scripts\\areas\\clientoperations\\views\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\wwwroot\\js\\scripts\\areas\\clientoperations\\views\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -11,16 +15,24 @@
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\clientoperations\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\clientoperations\\views\\client\\clientslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\clientoperations\\views\\client\\clientslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\wwwroot\\js\\scripts\\areas\\itemoperations\\views\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\wwwroot\\js\\scripts\\areas\\itemoperations\\views\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\wwwroot\\js\\helpers\\ajaxhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\wwwroot\\js\\helpers\\ajaxhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\itemoperations\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\itemoperations\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\clientoperations\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\clientoperations\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\clientoperations\\views\\client\\clientslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\clientoperations\\views\\client\\clientslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\itemoperations\\views\\item\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -51,18 +63,6 @@
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\itemoperations\\views\\item\\itemslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\wwwroot\\js\\helpers\\ajaxhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\wwwroot\\js\\helpers\\ajaxhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\clientoperations\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\clientoperations\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -78,24 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Program.cs",
-              "RelativeDocumentMoniker": "Bruh1\\Program.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Program.cs",
-              "RelativeToolTip": "Bruh1\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Test\\Program.cs",
+              "RelativeDocumentMoniker": "Test\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Test\\Program.cs*",
+              "RelativeToolTip": "Test\\Program.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T10:12:52.827Z",
+              "WhenOpened": "2024-10-07T08:12:29.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ItemProcessor.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ProviderLayer\\Processors\\ItemProcessor.cs",
               "RelativeDocumentMoniker": "ProviderLayer\\Processors\\ItemProcessor.cs",
@@ -103,12 +103,11 @@
               "RelativeToolTip": "ProviderLayer\\Processors\\ItemProcessor.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAMwCkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T10:12:44.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T10:12:44.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "IProviderProcessor.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ProviderLayer\\Processors\\IProviderProcessor.cs",
               "RelativeDocumentMoniker": "ProviderLayer\\Processors\\IProviderProcessor.cs",
@@ -116,12 +115,11 @@
               "RelativeToolTip": "ProviderLayer\\Processors\\IProviderProcessor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T10:12:42.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T10:12:42.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Bruh1\\Views\\Home\\Index.cshtml",
@@ -129,12 +127,11 @@
               "RelativeToolTip": "Bruh1\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-03T09:32:40.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T09:32:40.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Bruh1\\Views\\Shared\\_Layout.cshtml",
@@ -142,12 +139,11 @@
               "RelativeToolTip": "Bruh1\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABEAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-03T08:01:00.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T08:01:00.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Style.css",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\css\\Style.css",
               "RelativeDocumentMoniker": "Bruh1\\wwwroot\\css\\Style.css",
@@ -155,12 +151,11 @@
               "RelativeToolTip": "Bruh1\\wwwroot\\css\\Style.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-03T07:29:15.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T07:29:15.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ItemController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ItemOperations\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "Bruh1\\Areas\\ItemOperations\\Controllers\\ItemController.cs",
@@ -168,12 +163,11 @@
               "RelativeToolTip": "Bruh1\\Areas\\ItemOperations\\Controllers\\ItemController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAUwCUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T07:26:10.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T07:26:10.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ItemOperations\\Views\\Item\\Index.cshtml",
               "RelativeDocumentMoniker": "Bruh1\\Areas\\ItemOperations\\Views\\Item\\Index.cshtml",
@@ -181,12 +175,11 @@
               "RelativeToolTip": "Bruh1\\Areas\\ItemOperations\\Views\\Item\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-03T07:26:32.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T07:26:32.969Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ItemSlice.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ItemOperations\\Views\\Item\\ItemSlice.cshtml",
               "RelativeDocumentMoniker": "Bruh1\\Areas\\ItemOperations\\Views\\Item\\ItemSlice.cshtml",
@@ -194,8 +187,7 @@
               "RelativeToolTip": "Bruh1\\Areas\\ItemOperations\\Views\\Item\\ItemSlice.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-03T07:26:33.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T07:26:33.423Z"
             },
             {
               "$type": "Document",
@@ -217,40 +209,37 @@
               "RelativeDocumentMoniker": "Bruh1\\wwwroot\\js\\Scripts\\Areas\\ItemOperations\\Views\\Index.js",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Areas\\ItemOperations\\Views\\Index.js",
               "RelativeToolTip": "Bruh1\\wwwroot\\js\\Scripts\\Areas\\ItemOperations\\Views\\Index.js",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAmwIEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAiwJYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-01T13:20:35.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T13:20:35.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "ClientController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ClientOperations\\Controllers\\ClientController.cs",
               "RelativeDocumentMoniker": "Bruh1\\Areas\\ClientOperations\\Controllers\\ClientController.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ClientOperations\\Controllers\\ClientController.cs",
               "RelativeToolTip": "Bruh1\\Areas\\ClientOperations\\Controllers\\ClientController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowC0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T10:56:39.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T10:56:39.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ClientOperations\\Views\\Client\\Index.cshtml",
               "RelativeDocumentMoniker": "Bruh1\\Areas\\ClientOperations\\Views\\Client\\Index.cshtml",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ClientOperations\\Views\\Client\\Index.cshtml",
               "RelativeToolTip": "Bruh1\\Areas\\ClientOperations\\Views\\Client\\Index.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAACQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T13:54:14.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T13:54:14.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ClientSlice.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ClientOperations\\Views\\Client\\ClientSlice.cshtml",
               "RelativeDocumentMoniker": "Bruh1\\Areas\\ClientOperations\\Views\\Client\\ClientSlice.cshtml",
@@ -258,34 +247,32 @@
               "RelativeToolTip": "Bruh1\\Areas\\ClientOperations\\Views\\Client\\ClientSlice.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-01T12:51:52.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T12:51:52.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.js",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Areas\\ClientOperations\\Views\\Index.js",
               "RelativeDocumentMoniker": "Bruh1\\wwwroot\\js\\Scripts\\Areas\\ClientOperations\\Views\\Index.js",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Areas\\ClientOperations\\Views\\Index.js",
               "RelativeToolTip": "Bruh1\\wwwroot\\js\\Scripts\\Areas\\ClientOperations\\Views\\Index.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANEAAAB2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-10-01T07:01:04.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "AjaxHelpers.js",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
               "RelativeDocumentMoniker": "Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
               "RelativeToolTip": "Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwE0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-01T06:04:59.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T06:04:59.575Z"
             },
             {
               "$type": "Document",
@@ -297,8 +284,7 @@
               "RelativeToolTip": "Bruh1\\Controllers\\BaseController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T12:46:23.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T12:46:23.336Z"
             }
           ]
         }

@@ -2,17 +2,20 @@
 using CoreLib;
 using ViewModels;
 using ProviderLayer.Processors;
+using Microsoft.IdentityModel.Tokens;
+using CoreLib.Security.Cryptography;
 namespace Test
 {
     internal class Program
     {
         static async Task Main(string[] args)
         {
-            ClientProcessor Client = new ClientProcessor();
-            ItemProcessor Item = new ItemProcessor();
-
-            await Client.Update(new Client { ID = 2, Name = "bruhbruh", Type = "Seller" });
-           
+            var A = "asdasd";
+            var encryptedString = A.AesEncrypt();    
+            var decryptedString = encryptedString.Decrypt<string>(); 
+            Console.WriteLine($"Before: {A}");
+            Console.WriteLine($"Encrypted: {encryptedString}");
+            Console.WriteLine($"Unencrypted: {decryptedString}");
         }
     }
 }
