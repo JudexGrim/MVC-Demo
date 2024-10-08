@@ -10,12 +10,13 @@ namespace Test
     {
         static async Task Main(string[] args)
         {
-            var A = "asdasd";
-            var encryptedString = A.AesEncrypt();    
-            var decryptedString = encryptedString.Decrypt<string>(); 
-            Console.WriteLine($"Before: {A}");
-            Console.WriteLine($"Encrypted: {encryptedString}");
-            Console.WriteLine($"Unencrypted: {decryptedString}");
+            AuthenticationProcessor processor = new AuthenticationProcessor();
+            UserProcessor userProcessor = new UserProcessor();
+
+
+            var user = await userProcessor.FetchUser("Ah-Jun");
+            Console.WriteLine($"{user.ID} | {user.Username} | {user.Password} | {user.Email}");
+            //await processor.AttemptLogin(6);
         }
     }
 }

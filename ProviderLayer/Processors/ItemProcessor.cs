@@ -16,8 +16,7 @@ namespace ProviderLayer.Processors
             using (ItemBusiness Processor = new ItemBusiness())
             {
                 var queryResult = await Processor.GetAll();
-                var entityItems = queryResult.Item1;
-                var viewItems = from r in entityItems
+                var viewItems = from r in queryResult.Item1
                                 select new Item
                                 {
                                     ID = r.ID,

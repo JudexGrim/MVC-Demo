@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MVC.Attributes;
 using MVC.Controllers;
 using ProviderLayer.Processors;
 using System.Reflection;
@@ -9,6 +11,7 @@ using ViewModels;
 namespace MVC.Areas.ItemOperations.Controllers
 {
     [Area("ItemOperations")]
+    [OOAuthorizeAttribute]
     public class ItemController : BaseController
     {
         private readonly ILogger<ItemController> _logger;
@@ -19,6 +22,7 @@ namespace MVC.Areas.ItemOperations.Controllers
             _logger = logger;
 
         }
+         
         public async Task<IActionResult> Index()
         {
             var queryResult = await _itemProvider.GetAll();
@@ -29,7 +33,7 @@ namespace MVC.Areas.ItemOperations.Controllers
             return View(Models);
         }
 
-        [HttpPost]
+        [HttpPost] 
         [ValidateAntiForgeryToken]
             public async Task<IActionResult> Submission(Item model)
             {
@@ -45,12 +49,12 @@ namespace MVC.Areas.ItemOperations.Controllers
                 return createresponse(false,"Something went wrong");
             }
 
-        [HttpPost]
+        [HttpPost] 
         public IActionResult ItemSlice(Item model)
         {
             return PartialView(model);
         }
-
+         
         public async Task<IActionResult> CreateBar()
         {
             var queryResult = await _itemProvider.GetAll();
@@ -60,7 +64,7 @@ namespace MVC.Areas.ItemOperations.Controllers
             return PartialView();
         }
 
-        [HttpPost]
+        [HttpPost] 
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {

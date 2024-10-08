@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVC.Attributes;
 using MVC.Controllers;
 using ProviderLayer.Processors;
 using ViewModels;
@@ -6,6 +7,7 @@ using ViewModels;
 namespace MVC.Areas.ClientOperations.Controllers
 {
     [Area("ClientOperations")]
+    [OOAuthorize]
     public class ClientController : BaseController
     {
         private readonly ILogger<ClientController> _logger;
@@ -15,6 +17,7 @@ namespace MVC.Areas.ClientOperations.Controllers
         {
             _logger = logger;
         }
+
         public async Task<IActionResult> Index() 
         {
             var queryReturn = await _clientProvider.GetAll();

@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ViewModels.LoginViewModel;
+@addTagHelper *, MVC
+
+<div class="background-container background-container-light" style="width:40%">
+    @using (Html.BeginForm("AttemptLogin", "Auth", FormMethod.Post, new { @id = "submitForm" }))
+    {
+        @Html.AntiForgeryToken()
+        <div>
+            <label>Username / Email</label>
+            <TextBox id="login" name="User"></TextBox>
+            @Html.ValidationMessageFor(Model => Model.User, "", new { @class = "text-danger" })
+        </div>
+
+        <div>
+            <label>Password</label>
+            <TextBox id="password" name="password"></TextBox>
+            @Html.ValidationMessageFor(Model => Model.Password, "", new { @class = "text-danger" })
+        </div>
+
+        @Html.Hidden("ReturnUrl", ViewData["ReturnUrl"])
+
+        <div>
+            <SubmitButton>Login</SubmitButton>
+        </div>
+    }
+</div>

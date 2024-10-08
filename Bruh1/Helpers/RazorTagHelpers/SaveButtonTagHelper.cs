@@ -3,6 +3,7 @@
 namespace MVC.Helpers.RazorTagHelpers
 {
     [HtmlTargetElement ("SaveButton")]
+    [HtmlTargetElement("SubmitButton")]
     public class SaveButtonTagHelper : TagHelper
     {
         public string id { get; set; }
@@ -12,7 +13,17 @@ namespace MVC.Helpers.RazorTagHelpers
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "button";
-            output.Content.SetContent("Save");
+
+            var content = output.GetChildContentAsync().Result.GetContent();
+            if (content != null)
+            {
+                output.Content.SetContent(content);
+            }
+            else 
+            { 
+                output.Content.SetContent("Save");
+            }
+
 
             output.Attributes.SetAttribute("type", "submit");
 

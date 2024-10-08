@@ -1,5 +1,9 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using ProviderLayer;
 using ProviderLayer.Processors;
+using System.Text;
 namespace MVC
 {
     public class Program
@@ -9,6 +13,17 @@ namespace MVC
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddAuthentication("CookieAuth")
+            .AddCookie("CookieAuth", options =>
+            {
+                options.Cookie.Name = "UserLoginCookie"; 
+                options.LoginPath = "/Home/Login";    
+                //options.LogoutPath = "/Account/Logout";  
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(30); 
+                options.SlidingExpiration = true;       
+            });
+
+            builder.Services.AddAuthorization();
             builder.Services.AddControllersWithViews();
             builder.Services.AddSession();
 
@@ -26,7 +41,9 @@ namespace MVC
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
+            app.UseAntiforgery();
             app.UseSession();
 
             app.MapControllerRoute(
