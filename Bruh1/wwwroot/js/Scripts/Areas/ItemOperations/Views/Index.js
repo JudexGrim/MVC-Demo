@@ -170,17 +170,19 @@
         var id = button.dataset.id;
 
         var formData = { ID: id }
-        $.ajax({
+       
+        var settings = {
             url: '/Home/ConfirmDelete',
-            type: "POST",
+            methodType: 'POST',
             data: formData,
-            success: (response) => { $('#row-' + id).before(response); $('#confirmDelete-' + id).modal(); $('#confirmDelete-' + id).modal('show'); },
-            error: (response) => console.log(response)
-        })
-        
+            target: `#row-${id}`,
+            modalID: `confirmDelete-${id}`
+        }
+
+        AjaxHelpers.LoadModal(settings)
     },
 
-    DeleteItem: function (button) 
+    ConfirmDelete: function (button) 
     {
         var id = button.dataset.id;
         var token = $('input[name="__RequestVerificationToken"]').val();

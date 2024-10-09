@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\js\\Scripts\\Areas\\ItemOperations\\Views\\Index.js"
     },
     {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js",
+      "PackagePath": "staticwebassets\\js\\Scripts\\Views\\Home\\Login.js"
+    },
+    {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -10,7 +10,7 @@
             </div>
                 <div class="modal-body text-dark"> Are You Sure You Want To Delete This Entry?</div>
             <div class="modal-footer">
-                @CustomHtmlHelpers.DeleteButton("confirmDelete-btn", "Index.DeleteItem(this)", new List<KeyValuePair<string, string>> { new("id", ViewBag.id.ToString()) })
+                @CustomHtmlHelpers.DeleteButton("confirmDelete-btn", "Index.ConfirmDelete(this)", new List<KeyValuePair<string, string>> { new("id", ViewBag.id.ToString()) })
                 @CustomHtmlHelpers.CancelButton("cancel-btn", "Index.Cancel(this)", new List<KeyValuePair<string, string>> { new("id", ViewBag.id.ToString()) })
             </div>
         </div>

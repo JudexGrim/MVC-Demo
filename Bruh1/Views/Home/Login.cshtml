@@ -1,29 +1,32 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var returnUrl = ViewData["ReturnUrl"];
 }
 @model ViewModels.LoginViewModel;
 @addTagHelper *, MVC
 
 <div class="background-container background-container-light" style="width:40%">
-    @using (Html.BeginForm("AttemptLogin", "Auth", FormMethod.Post, new { @id = "submitForm" }))
+    @using (Html.BeginForm("AttemptLogin", "Account", FormMethod.Post, new {  @id = "submitLoginForm" }))
     {
         @Html.AntiForgeryToken()
         <div>
             <label>Username / Email</label>
-            <TextBox id="login" name="User"></TextBox>
+                <TextBox id="User" required="required" name="User" onkeydown="Login.HandleKeyEvent(event)"></TextBox>
             @Html.ValidationMessageFor(Model => Model.User, "", new { @class = "text-danger" })
         </div>
 
         <div>
             <label>Password</label>
-            <TextBox id="password" name="password"></TextBox>
+            <TextBox id="password" required="required" name="password" onkeydown="Login.HandleKeyEvent(event)" ></TextBox>
             @Html.ValidationMessageFor(Model => Model.Password, "", new { @class = "text-danger" })
         </div>
 
         @Html.Hidden("ReturnUrl", ViewData["ReturnUrl"])
 
-        <div>
-            <SubmitButton>Login</SubmitButton>
+        <div class="my-1" id="login-btn">
+            <SubmitButton onclick="Login.AttemptLogin()">Login</SubmitButton>
         </div>
     }
 </div>
+
+<script src="~/js/Scripts/Views/Home/Login.js"></script>

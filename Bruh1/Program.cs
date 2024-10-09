@@ -6,22 +6,38 @@ using ProviderLayer.Processors;
 using System.Text;
 namespace MVC
 {
-    public class Program
+    public class Program  
     {
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            //Add services to the container.
             builder.Services.AddAuthentication("CookieAuth")
             .AddCookie("CookieAuth", options =>
             {
-                options.Cookie.Name = "UserLoginCookie"; 
-                options.LoginPath = "/Home/Login";    
+                options.Cookie.Name = "UserLoginCookie";
+                options.LoginPath = "/Home/Login";
                 //options.LogoutPath = "/Account/Logout";  
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(30); 
-                options.SlidingExpiration = true;       
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+                options.SlidingExpiration = true;
+            })
+            .AddJwtBearer("JWTAuth",options =>
+            {
+                var key = Encoding.ASCII.GetBytes(builder.Configuration["JwtSettings:SecretKey"]);
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidateLifetime = true,
+                    ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+                    ValidAudience = builder.Configuration["JwtSettings:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(key)
+                };
             });
+
+
 
             builder.Services.AddAuthorization();
             builder.Services.AddControllersWithViews();

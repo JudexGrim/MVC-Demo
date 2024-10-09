@@ -67,7 +67,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
@@ -84,6 +84,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.5, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
             }
           },
           "imports": [

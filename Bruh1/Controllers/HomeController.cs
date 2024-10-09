@@ -5,6 +5,7 @@ using ViewModels;
 
 namespace MVC.Controllers
 {
+ 
     public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;

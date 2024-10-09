@@ -57,21 +57,16 @@
 
         //Call Confirmation Message View
         var formData = { ID: id }
-        $.ajax({
-            url:'/Home/ConfirmDelete',
-            type: 'POST',
+        
+        var settings = {
+            url: '/Home/ConfirmDelete',
+            methodType: 'POST',
             data: formData,
-            success: (response) => {
-                var temp = document.createElement('div')
-                temp.innerHTML = response.trim();
-                var modal = temp.querySelector(`#confirmDelete-${id}`);
+            target: `#row-create`,
+            modalID: `confirmDelete-${id}`
+        }
 
-                document.querySelector('#row-create').before(modal);
-                $(`#confirmDelete-${id}`).modal();
-                $(`#confirmDelete-${id}`).modal('show');
-            },
-            error:(response) => alert(response.message),
-        })
+        AjaxHelpers.LoadModal(settings)
     },
 
     Cancel: function (button) {
@@ -167,7 +162,7 @@
 
     },
 
-    DeleteClient: function (button) {
+    ConfirmDelete: function (button) {
 
         var id = button.dataset.id
 

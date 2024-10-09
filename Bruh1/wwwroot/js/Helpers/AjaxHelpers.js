@@ -1,6 +1,5 @@
 ﻿window.AjaxHelpers = {
-    Get: function (url, successCallback, errorCallback)
-    {
+    Get: function (url, successCallback, errorCallback) {
         $.ajax({
             url: url,
             type: 'GET',
@@ -8,8 +7,7 @@
             error: errorCallback
         })
     },
-    Post: function (url, data, successCallback, errorCallback, token=null)
-    {
+    Post: function (url, data, successCallback, errorCallback, token = null) {
         $.ajax({
             url: url,
             type: 'POST',
@@ -19,23 +17,21 @@
             error: errorCallback
         })
     },
-   
-    LoadPartial: function (data)
-    {
+
+    LoadPartial: function (data) {
         var settings = {
-            url: '',
-            methodType : 'GET',
+            url: null,
+            methodType: 'GET',
             data: null,
             token: null,
-            target:null,
+            target: null,
             appendType: 'after',
             viewResponse: null,
             PartialViewMapping: null
         }
 
-        try
-        {
-           //Check That an action url Exists
+        try {
+            //Check That an action url Exists
             if (data.url && data.target && data.appendType) {
 
                 //Append View Function
@@ -59,7 +55,7 @@
 
                 var ajaxParams = { ...settings, ...data }
 
-                    //Make Sure Method Type is Valid
+                //Make Sure Method Type is Valid
                 if (['GET', 'POST', 'PUT', 'DELETE'].includes(ajaxParams.methodType.toUpperCase())) {
 
                     //Check if Request Wants to Submit data
@@ -69,8 +65,8 @@
                         $.ajax({
                             url: ajaxParams.url,
                             type: ajaxParams.methodType,
-                            data : ajaxParams.data,
-                            headers: {'RequestVerificationToken' : ajaxParams.token},
+                            data: ajaxParams.data,
+                            headers: { 'RequestVerificationToken': ajaxParams.token },
                             success: function (response) {
 
                                 //After Submission, Load Partial View
@@ -89,22 +85,22 @@
                                     })
                                 }
                                 //If No Mapping Is Needed, Just Do a normal return
-                                else 
-                                $.ajax({
-                                    url: ajaxParams.viewResponse,
-                                    type: 'GET',
-                                    success: function (response) {
-                                        AppendView(ajaxParams.appendType, response, ajaxParams.target)
-                                    },
-                                    error: (response) => { alert("Error Loading Partial View: " + response.message) }
-                                })
-                               
+                                else
+                                    $.ajax({
+                                        url: ajaxParams.viewResponse,
+                                        type: 'GET',
+                                        success: function (response) {
+                                            AppendView(ajaxParams.appendType, response, ajaxParams.target)
+                                        },
+                                        error: (response) => { alert("Error Loading Partial View: " + response.message) }
+                                    })
+
                             },
                             error: (response) => { alert("Eror Submitting Data: " + response.message) }
                         })
                     }
                     else {
-                        
+
 
                         //Load Partial View
                         $.ajax({
@@ -118,17 +114,69 @@
                     }
 
                 } else throw Error("AJAX Method Type Invalid.")
-                
-                
+
+
             }
-            
+
             else throw Error('Provided Settings Invalid. Please Provide an Action URL.')
-        
-        
+
+
         } catch (error) {
             console.error(error.message)
         }
+
+    },
+
+    LoadModal: function (data) {
+
+
+        var settings = {
+            url: null,
+            methodType: 'GET',
+            data: null,
+            target: null,
+            modalID: null
+        }
+
+        var ajaxParams = { ...settings, ...data }
        
+        var AppendModal = (target, view, viewID) => {
+
+            $(target).before(view);
+            $(`#${viewID}`).modal();
+            $(`#${viewID}`).modal('show');
+        }
+
+        //Make Sure Method Type is Valid
+        if (['GET', 'POST', 'PUT', 'DELETE'].includes(ajaxParams.methodType.toUpperCase())) {
+
+            if (ajaxParams.target === null || ajaxParams.url === null || ajaxParams.modalID === null) {
+                console.log('Invalid / null Data')
+            }
+            else try {
+
+                if (ajaxParams.data === null) {
+
+                    $.ajax({
+                        url: ajaxParams.url,
+                        type: ajaxParams.methodType,
+                        data: ajaxParams.data,
+                        success: (response) => AppendModal(ajaxParams.target, response, ajaxParams.modalID),
+                        error: (response) => console.log(response)
+                    })
+                }
+
+                else {
+
+                    $.ajax({
+                        url: ajaxParams.url,
+                        type: ajaxParams.methodType,
+                        success: (response) => AppendModal(ajaxParams.target, response, ajaxParams.modalID),
+                        error: (response) => console.log(response)
+                    })
+                }
+            }
+            catch (error) { console.error(error.message) }
+        }
     }
-    
 }

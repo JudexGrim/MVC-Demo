@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bCDFR+9eiaGWFV5RX2ysEROJvnpdOVqKWXY3V6iTJeg=",
+  "Hash": "eOodrL36PXNiBt5yz8/PrpwoUplpN263eFMIaZ5lVSE=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Scripts\\Areas\\ItemOperations\\Views\\Index.js"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "js/Scripts/Views/Home/Login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Scripts\\Views\\Home\\Login.js"
     },
     {
       "Identity": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\site.js",
