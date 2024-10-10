@@ -155,7 +155,7 @@
             }
             else try {
 
-                if (ajaxParams.data === null) {
+                if (ajaxParams.data !== null) {
 
                     $.ajax({
                         url: ajaxParams.url,

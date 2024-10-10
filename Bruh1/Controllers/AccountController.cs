@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using Microsoft.IdentityModel.Tokens;
 using MVC.Attributes;
 using ProviderLayer.Processors;
@@ -40,15 +41,16 @@ namespace MVC.Controllers
                         returnUrl = GetBaseURl() + returnUrl;
 
                         return Redirect(returnUrl);
-                    } 
-                else
-                {
-                    return RedirectToAction("Index", "Home");
-                }
-                }
-            }
+                    }
 
-            return createresponse(false, "Login Info is Invalid");
+                    else return RedirectToAction("Index", "Home");
+                    
+                }
+                
+                else return createresponse(false, "Login Info is Invalid");
+                
+            }
+            else return createresponse(false, "Login Info is Invalid");
         }
 
         private string GenerateJwtToken(User user)

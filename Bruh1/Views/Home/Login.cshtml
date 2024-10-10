@@ -6,25 +6,29 @@
 @addTagHelper *, MVC
 
 <div class="background-container background-container-light" style="width:40%">
-    @using (Html.BeginForm("AttemptLogin", "Account", FormMethod.Post, new {  @id = "submitLoginForm" }))
+    @using (Html.BeginForm("AttemptLogin", "Account", FormMethod.Post, new { @onsubmit = "Login.AttemptLogin()", @id = "submitLoginForm" }))
     {
         @Html.AntiForgeryToken()
         <div>
-            <label>Username / Email</label>
+            <label class="w-100">
+                Username / Email
                 <TextBox id="User" required="required" name="User" onkeydown="Login.HandleKeyEvent(event)"></TextBox>
             @Html.ValidationMessageFor(Model => Model.User, "", new { @class = "text-danger" })
+                </label>
         </div>
 
         <div>
-            <label>Password</label>
-            <TextBox id="password" required="required" name="password" onkeydown="Login.HandleKeyEvent(event)" ></TextBox>
+            <label class="w-100">
+                Password
+                <TextBox id="Password" required="required" name="Password" onkeydown="Login.HandleKeyEvent(event)" ></TextBox>
             @Html.ValidationMessageFor(Model => Model.Password, "", new { @class = "text-danger" })
+            </label>
         </div>
 
         @Html.Hidden("ReturnUrl", ViewData["ReturnUrl"])
 
         <div class="my-1" id="login-btn">
-            <SubmitButton onclick="Login.AttemptLogin()">Login</SubmitButton>
+            <SubmitButton >Login</SubmitButton>
         </div>
     }
 </div>

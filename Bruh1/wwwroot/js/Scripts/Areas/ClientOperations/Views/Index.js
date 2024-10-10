@@ -20,12 +20,15 @@
 
         //Set up Variables
         var id = button.dataset.id;
-        var otherDisplayRows = Array.from(document.querySelectorAll(`tr[data-type="display"]`)).filter((row) => !row.dataset.id !== id);
-        var otherEditRows = Array.from(document.querySelectorAll(`tr[data-type="edit"]`)).filter((row) => !row.dataset.id !== id);
+        var otherDisplayRows = Array.from(document.querySelectorAll(`tr[data-type="display"]`)).filter((row) => row.dataset.id !== id);
+        var otherEditRows = Array.from(document.querySelectorAll(`tr[data-type="edit"]`)).filter((row) => row.dataset.id !== id);
 
         //Reset Validation Error If Exists
-        document.querySelector(`#row-${id}[data-type="display"] input`).classList.remove('input-validation-error');
-        document.querySelector(`#row-${id}[data-type="display"] .field-validation-error`).classList.remove('input-validation-error');
+        document.querySelector(`#row-${id}[data-type="edit"] input`).classList.remove('input-validation-error');
+
+        if (document.querySelector(`#row-${id}[data-type="edit"] .field-validation-error`)) { 
+            document.querySelector(`#row-${id}[data-type="edit"] .field-validation-error`).classList.remove('input-validation-error');
+        }
 
         //Reset Other Rows
         otherDisplayRows.forEach((row) => row.style.display ='table-row')

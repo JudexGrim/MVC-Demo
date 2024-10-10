@@ -4,11 +4,12 @@
     {
         if (event.key === 'Enter')
         {
+            event.preventDefault();
             if (id !== -1) {
                 var button = $('#row-' + id + ' #save-btn')[0];
                 Index[func](button);
             }
-            else Index[func](id);
+            else console.log('smthSmth');
         }
 
     },

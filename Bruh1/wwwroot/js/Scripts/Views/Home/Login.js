@@ -16,33 +16,36 @@ let Login = {
             $('#submitLoginForm').validate().resetForm();
             return;
         }
+        else { 
 
+            var formData = {
+                User: $('#User').val(),
+                Password: $('#Password').val(),
+                returnUrl: $('#ReturnUrl').val()
+            }
 
-        var formData = {
-            User: $('#User').val(),
-            Password: $('#Password').val(),
-            returnUrl: $('#ReturnUrl')
+            $.ajax({
+                url: '/Account/AttemptLogin',
+                type: 'POST',
+                data: formData,
+                headers: { 'RequestVerificationToken': token },
+                success: (response) => { console.log(response) },
+                error: (response) => { console.log(response) }
+            })
         }
-
-        $.ajax({
-            url: 'Account/AttemptLogin',
-            type: 'POST',
-            data: formData,
-            headers: { 'RequestVerificationToken': token },
-            success: console.log('login ajax good'),
-            error: this.LoginFailed()
-        })
     },
 
     LoginFailed: function () {
 
         var settings = {
-            url: '/Home/Message',
+            url: '/Home/LoginFailed',
             methodType: 'GET',
             target: `btn-login`,
             modalID: `incorrectLogin`
         }
 
-        AjaxHelpers.LoadModal(settings)
+        alert('bad login');
+
+    //    AjaxHelpers.LoadModal(settings)
     }
 }

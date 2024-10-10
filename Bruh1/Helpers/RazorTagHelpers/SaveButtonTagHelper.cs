@@ -13,15 +13,15 @@ namespace MVC.Helpers.RazorTagHelpers
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "button";
-
+            
             var content = output.GetChildContentAsync().Result.GetContent();
-            if (content != null)
+            if (string.IsNullOrWhiteSpace(content))
             {
-                output.Content.SetContent(content);
+                output.Content.SetContent("Save");
             }
             else 
             { 
-                output.Content.SetContent("Save");
+                output.Content.SetContent(content);
             }
 
 
