@@ -44,8 +44,7 @@ let Login = {
             modalID: `incorrectLogin`
         }
 
-        alert('bad login');
 
-    //    AjaxHelpers.LoadModal(settings)
+        AjaxHelpers.LoadModal(settings)
     }
 }

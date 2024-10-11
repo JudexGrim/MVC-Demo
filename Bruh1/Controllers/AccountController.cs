@@ -28,7 +28,7 @@ namespace MVC.Controllers
             if (ModelState.IsValid)
             {
                 using AuthenticationProcessor authenticationProcessor = new AuthenticationProcessor();
-                var result = await authenticationProcessor.AttemptLogin(loginInfo);
+                var result = await authenticationProcessor.TryLogin(loginInfo);
 
                 if (result.success)
                 {
@@ -44,13 +44,13 @@ namespace MVC.Controllers
                     }
 
                     else return RedirectToAction("Index", "Home");
-                    
+
                 }
-                
-                else return createresponse(false, "Login Info is Invalid");
+
+                else return Json(new { success = false });
                 
             }
-            else return createresponse(false, "Login Info is Invalid");
+            else return PartialView("~/Views/Home/LoginFailed.cshtml");
         }
 
         private string GenerateJwtToken(User user)

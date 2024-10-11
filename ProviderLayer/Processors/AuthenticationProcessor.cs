@@ -11,7 +11,7 @@ namespace ProviderLayer.Processors
 {
     public class AuthenticationProcessor : Disposer
     {
-        public async Task<(bool success, string message, User? userModel)> AttemptLogin(LoginViewModel login)
+        public async Task<(bool success, string message, User? userModel)> TryLogin(LoginViewModel login)
         {
             using UserBusiness userBusiness = new UserBusiness();
             try

@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\wwwroot\\js\\scripts\\views\\home\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,9 +42,9 @@
               "Title": "Login.js",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js",
               "RelativeDocumentMoniker": "Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js",
-              "RelativeToolTip": "Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCAAAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js*",
+              "RelativeToolTip": "Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js*",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvy4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-10-09T10:35:14.506Z",
               "EditorCaption": ""
@@ -48,45 +52,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Bruh1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Bruh1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwCkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:39:19.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Bruh1\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Bruh1\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwDEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAhwDUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T10:39:25.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Home\\Login.cshtml",
               "RelativeDocumentMoniker": "Bruh1\\Views\\Home\\Login.cshtml",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Home\\Login.cshtml",
               "RelativeToolTip": "Bruh1\\Views\\Home\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-09T13:28:47.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AjaxHelpers.js",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
               "RelativeDocumentMoniker": "Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
               "RelativeToolTip": "Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAADwv5IAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-10-10T10:39:34.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "OOAuthorizeAttribute.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Attributes\\OOAuthorizeAttribute.cs",
               "RelativeDocumentMoniker": "Bruh1\\Attributes\\OOAuthorizeAttribute.cs",

@@ -6,7 +6,7 @@
 @addTagHelper *, MVC
 
 <div class="background-container background-container-light" style="width:40%">
-    @using (Html.BeginForm("AttemptLogin", "Account", FormMethod.Post, new { @onsubmit = "Login.AttemptLogin()", @id = "submitLoginForm" }))
+    @using (Html.BeginForm("AttemptLogin", "Account", FormMethod.Post, new {  @id = "submitLoginForm" }))
     {
         @Html.AntiForgeryToken()
         <div>
