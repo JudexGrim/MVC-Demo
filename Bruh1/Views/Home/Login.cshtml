@@ -12,15 +12,15 @@
         <div>
             <label class="w-100">
                 Username / Email
-                <TextBox id="User" required="required" name="User" onkeydown="Login.HandleKeyEvent(event)"></TextBox>
-            @Html.ValidationMessageFor(Model => Model.User, "", new { @class = "text-danger" })
+                <TextBox id="User" required="required" name="User"></TextBox>
+            @Html.ValidationMessageFor(Model => Model.User, "", new { @onsubmit="return false;", @class = "text-danger" })
                 </label>
         </div>
 
         <div>
             <label class="w-100">
                 Password
-                <TextBox id="Password" required="required" name="Password" onkeydown="Login.HandleKeyEvent(event)" ></TextBox>
+                <TextBox id="Password" required="required" name="Password" ></TextBox>
             @Html.ValidationMessageFor(Model => Model.Password, "", new { @class = "text-danger" })
             </label>
         </div>

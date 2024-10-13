@@ -15,9 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityModels", "EntityModels", "{9DAE0058-68E9-4E36-A602-7DB40092EE19}"
 	ProjectSection(SolutionItems) = preProject
-		ViewModels\Bills\Bill.cs = ViewModels\Bills\Bill.cs
-		ViewModels\Bills\BillDetail.cs = ViewModels\Bills\BillDetail.cs
-		ViewModels\Bills\BillHeader.cs = ViewModels\Bills\BillHeader.cs
 		ViewModels\Client.cs = ViewModels\Client.cs
 		ViewModels\Item.cs = ViewModels\Item.cs
 	EndProjectSection

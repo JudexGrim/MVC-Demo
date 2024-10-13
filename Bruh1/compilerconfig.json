@@ -1,0 +1,9 @@
+﻿[
+  {
+    "outputFile": "wwwroot/Sass/Styles.css",
+    "inputFile": "wwwroot/Sass/Styles.scss",
+    "minify": {
+      "enabled": true
+    }
+  }
+]

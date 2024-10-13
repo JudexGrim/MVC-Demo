@@ -9,6 +9,18 @@
       "PackagePath": "staticwebassets\\Media\\Images\\Background.png"
     },
     {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Styles.css",
+      "PackagePath": "staticwebassets\\Sass\\Styles.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Styles.min.css",
+      "PackagePath": "staticwebassets\\Sass\\Styles.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Styles.scss",
+      "PackagePath": "staticwebassets\\Sass\\Styles.scss"
+    },
+    {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\css\\Style.css",
       "PackagePath": "staticwebassets\\css\\Style.css"
     },

@@ -8,6 +8,6 @@ namespace ViewModels
 {
     public interface IViewModel
     {
-        int ID { get; set; }
+         int ID { get; set; }
     }
 }

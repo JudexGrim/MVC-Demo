@@ -5,9 +5,9 @@ namespace MVC.Controllers
 {
     public class BaseController : Controller
     {
-        public JsonResult createresponse( bool IsSucess,string Message ="",object Data= null)
+        public JsonResult createresponse( bool IsSuccess,string Message ="",object Data= null)
         {
-            return Json(new { IsSucess, Message, Data}); 
+            return Json(new { IsSuccess, Message, Data}); 
         }
 
         public string GetBaseURl()

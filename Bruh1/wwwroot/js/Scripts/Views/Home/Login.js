@@ -3,7 +3,7 @@ let Login = {
 
     HandleKeyEvent: function (event) {
         if (event.key === 'Enter') {
-            this.AttemptLogin();
+            Login.AttemptLogin();
         }
 
     },
@@ -28,9 +28,17 @@ let Login = {
                 url: '/Account/AttemptLogin',
                 type: 'POST',
                 data: formData,
-                headers: { 'RequestVerificationToken': token },
-                success: (response) => { console.log(response) },
-                error: (response) => { console.log(response) }
+                headers: { RequestVerificationToken: token },
+                success: (response) => {
+
+                    if (response.isSuccess) {
+
+                        window.location.href = response.data.redirectUrl || '/'
+                    } else {
+                        Login.LoginFailed()
+                    }
+                },
+                error: (response) => Login.LoginFailed()
             })
         }
     },
@@ -40,11 +48,26 @@ let Login = {
         var settings = {
             url: '/Home/LoginFailed',
             methodType: 'GET',
-            target: `btn-login`,
+            target: `#login-btn`,
             modalID: `incorrectLogin`
         }
 
 
         AjaxHelpers.LoadModal(settings)
+
+    },
+
+    HideModal: function () {
+
+        $(`#incorrectLogin`).modal('hide')
+    },
+
+    Initialize: function () {
+
+        document.querySelectorAll('input').forEach((input) => input.addEventListener('keydown', Login.HandleKeyEvent))
+
+        document.querySelector('#login-btn button').addEventListener('click', () => Login.AttemptLogin());
     }
 }
+
+document.addEventListener('DOMContentLoaded', Login.Initialize)

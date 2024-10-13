@@ -9,6 +9,7 @@
       "MVC/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "BuildWebCompiler2022": "1.14.10",
           "CoreLib": "1.0.0",
           "Dapper": "2.1.35",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.10",
@@ -69,6 +70,7 @@
           }
         }
       },
+      "BuildWebCompiler2022/1.14.10": {},
       "Dapper/2.1.35": {
         "runtime": {
           "lib/net7.0/Dapper.dll": {
@@ -1888,6 +1890,13 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "BuildWebCompiler2022/1.14.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K6DuYLk2vB1H35DdAyqaqYkAOSTRcB6rxaPIyL1T0k0cOx70Jm4QKav7JzJx1+6KoltvXlM4oCtmgRbm2F4jhw==",
+      "path": "buildwebcompiler2022/1.14.10",
+      "hashPath": "buildwebcompiler2022.1.14.10.nupkg.sha512"
     },
     "Dapper/2.1.35": {
       "type": "package",

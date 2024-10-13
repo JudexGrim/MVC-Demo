@@ -9,5 +9,11 @@ namespace ViewModels.Bills
     public class BillHeader : IViewModel
     {
         public int ID { get; set; }
+        public int ClientID { get; set; }
+        public int Type { get; set; }
+        public DateTime CreatedTime { get; set; }
+        public DateTime BillDate { get; set; }
+        public IEnumerable<BillDetail> Details { get; set; }
+
     }
 }

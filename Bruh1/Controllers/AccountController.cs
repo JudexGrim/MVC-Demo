@@ -37,20 +37,17 @@ namespace MVC.Controllers
 
                     if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
                     {
-
-                        returnUrl = GetBaseURl() + returnUrl;
-
-                        return Redirect(returnUrl);
+                        return createresponse(true, "Login Successful", new { redirectUrl = returnUrl });
                     }
 
-                    else return RedirectToAction("Index", "Home");
+                    else return createresponse(true, "Login Successful", new { redirectUrl = "/Home/Index"});
 
                 }
 
-                else return Json(new { success = false });
+                else return createresponse(false, "login failed");
                 
             }
-            else return PartialView("~/Views/Home/LoginFailed.cshtml");
+            else return createresponse(false, "login failed");
         }
 
         private string GenerateJwtToken(User user)

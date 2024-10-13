@@ -10,13 +10,7 @@ namespace Test
     {
         static async Task Main(string[] args)
         {
-            AuthenticationProcessor processor = new AuthenticationProcessor();
-            UserProcessor userProcessor = new UserProcessor();
-
-
-            var user = await userProcessor.FetchUser("Ah-Jun");
-            Console.WriteLine($"{user.ID} | {user.Username} | {user.Password} | {user.Email}");
-            //await processor.AttemptLogin(6);
+            
         }
     }
 }

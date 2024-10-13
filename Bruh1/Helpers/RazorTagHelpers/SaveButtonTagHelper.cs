@@ -7,6 +7,7 @@ namespace MVC.Helpers.RazorTagHelpers
     public class SaveButtonTagHelper : TagHelper
     {
         public string id { get; set; }
+        public string type { get; set; }
         public string Class { get; set; }
         public string DefaultClass { get; set; } = "btn-success rounded-1 px-3 py-1 text-decoration-none border-0";
 
@@ -24,9 +25,9 @@ namespace MVC.Helpers.RazorTagHelpers
                 output.Content.SetContent(content);
             }
 
-
-            output.Attributes.SetAttribute("type", "submit");
-
+            
+                output.Attributes.SetAttribute("type", "button");
+            
 
             if (Class != null)
             {

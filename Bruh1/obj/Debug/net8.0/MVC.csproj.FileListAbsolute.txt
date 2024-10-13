@@ -521,7 +521,6 @@ C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\staticwebas
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MVC.props
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MVC.props
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\scopedcss\Areas\BillOperations\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\scopedcss\bundle\MVC.styles.css
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\scopedcss\projectbundle\MVC.bundle.scp.css
@@ -533,3 +532,5 @@ C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\MVC.genrunt
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\obj\Debug\net8.0\ref\MVC.dll
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\bin\Debug\net8.0\package-lock.json
+C:\Users\USER\Documents\GitHub Repos\MVC-Demo\Bruh1\bin\Debug\net8.0\package.json
