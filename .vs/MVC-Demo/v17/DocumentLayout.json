@@ -3,72 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\wwwroot\\js\\scripts\\views\\home\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\wwwroot\\js\\scripts\\views\\home\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\views\\home\\loginfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\views\\home\\loginfailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\billoperations\\views\\bill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\billoperations\\views\\bill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\wwwroot\\js\\helpers\\ajaxhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\wwwroot\\js\\helpers\\ajaxhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\views\\home\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\views\\home\\confirmdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\clientoperations\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\clientoperations\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\clientoperations\\views\\client\\clientslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\clientoperations\\views\\client\\clientslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\billoperations\\views\\bill\\detailslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\billoperations\\views\\bill\\detailslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\billoperations\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\billoperations\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\helpers\\razortaghelpers\\savebuttontaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\helpers\\razortaghelpers\\savebuttontaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\billoperations\\views\\bill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\billoperations\\views\\bill\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\bruh1\\areas\\billoperations\\views\\bill\\headerslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6EFBB023-B964-4C78-B728-6EF14A65314F}|Bruh1\\MVC.csproj|solutionrelative:bruh1\\areas\\billoperations\\views\\bill\\headerslice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D272F60-D59C-4590-88D5-D9178B44A808}|ProviderLayer\\ProviderLayer.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\providerlayer\\processors\\billprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D272F60-D59C-4590-88D5-D9178B44A808}|ProviderLayer\\ProviderLayer.csproj|solutionrelative:providerlayer\\processors\\billprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1BBB27B-EF4B-49EE-B016-FD426A54E78F}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\businesslayer\\businessprocessors\\billbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1BBB27B-EF4B-49EE-B016-FD426A54E78F}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\businessprocessors\\billbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9180DEC6-7205-4C67-A9A9-BE57AA66B949}|ViewModels\\ViewModels.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\viewmodels\\bills\\billdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9180DEC6-7205-4C67-A9A9-BE57AA66B949}|ViewModels\\ViewModels.csproj|solutionrelative:viewmodels\\bills\\billdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9180DEC6-7205-4C67-A9A9-BE57AA66B949}|ViewModels\\ViewModels.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\viewmodels\\iviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9180DEC6-7205-4C67-A9A9-BE57AA66B949}|ViewModels\\ViewModels.csproj|solutionrelative:viewmodels\\iviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B8C8EB0-0694-4E30-8B03-87822F8ECE11}|Test\\Test.csproj|c:\\users\\user\\documents\\github repos\\mvc-demo\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B8C8EB0-0694-4E30-8B03-87822F8ECE11}|Test\\Test.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,224 +46,126 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.js",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js",
-              "RelativeDocumentMoniker": "Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js*",
-              "RelativeToolTip": "Bruh1\\wwwroot\\js\\Scripts\\Views\\Home\\Login.js*",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwD0AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-09T10:35:14.506Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginFailed.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Home\\LoginFailed.cshtml",
-              "RelativeDocumentMoniker": "Bruh1\\Views\\Home\\LoginFailed.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Home\\LoginFailed.cshtml",
-              "RelativeToolTip": "Bruh1\\Views\\Home\\LoginFailed.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T14:41:24.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AjaxHelpers.js",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
-              "RelativeDocumentMoniker": "Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
-              "RelativeToolTip": "Bruh1\\wwwroot\\js\\Helpers\\AjaxHelpers.js",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAhwLQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-10T10:39:34.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "Bruh1\\Controllers\\BaseController.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "Bruh1\\Controllers\\BaseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Program.cs",
+              "RelativeDocumentMoniker": "Bruh1\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Program.cs",
+              "RelativeToolTip": "Bruh1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T14:20:44.315Z",
+              "WhenOpened": "2024-10-15T13:32:55.361Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HeaderSlice.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\HeaderSlice.cshtml",
-              "RelativeDocumentMoniker": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\HeaderSlice.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\HeaderSlice.cshtml",
-              "RelativeToolTip": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\HeaderSlice.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T11:55:10.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BillController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Controllers\\BillController.cs",
-              "RelativeDocumentMoniker": "Bruh1\\Areas\\BillOperations\\Controllers\\BillController.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Controllers\\BillController.cs",
-              "RelativeToolTip": "Bruh1\\Areas\\BillOperations\\Controllers\\BillController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T11:54:39.262Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\Index.cshtml",
-              "RelativeDocumentMoniker": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\Index.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\Index.cshtml",
-              "RelativeToolTip": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T11:54:07.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Bruh1\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Bruh1\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T10:39:25.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConfirmDelete.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Home\\ConfirmDelete.cshtml",
-              "RelativeDocumentMoniker": "Bruh1\\Views\\Home\\ConfirmDelete.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Home\\ConfirmDelete.cshtml",
-              "RelativeToolTip": "Bruh1\\Views\\Home\\ConfirmDelete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T14:29:25.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Bruh1\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Bruh1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAkwCgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T13:39:19.038Z",
+              "WhenOpened": "2024-10-15T13:29:53.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SaveButtonTagHelper.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Helpers\\RazorTagHelpers\\SaveButtonTagHelper.cs",
-              "RelativeDocumentMoniker": "Bruh1\\Helpers\\RazorTagHelpers\\SaveButtonTagHelper.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Helpers\\RazorTagHelpers\\SaveButtonTagHelper.cs",
-              "RelativeToolTip": "Bruh1\\Helpers\\RazorTagHelpers\\SaveButtonTagHelper.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBwAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Bruh1\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Bruh1\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwGsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T13:46:55.14Z"
+              "WhenOpened": "2024-10-15T13:29:39.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ClientOperations\\Views\\Client\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bruh1\\Areas\\ClientOperations\\Views\\Client\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ClientOperations\\Views\\Client\\Index.cshtml",
+              "RelativeToolTip": "Bruh1\\Areas\\ClientOperations\\Views\\Client\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T13:06:51.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientSlice.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ClientOperations\\Views\\Client\\ClientSlice.cshtml",
+              "RelativeDocumentMoniker": "Bruh1\\Areas\\ClientOperations\\Views\\Client\\ClientSlice.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\ClientOperations\\Views\\Client\\ClientSlice.cshtml",
+              "RelativeToolTip": "Bruh1\\Areas\\ClientOperations\\Views\\Client\\ClientSlice.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T13:06:47.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\Index.cshtml",
+              "RelativeToolTip": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-13T11:54:07.443Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "Bruh1\\Views\\Home\\Login.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "Bruh1\\Views\\Home\\Login.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAwwCMAAAA4AAAAAAAAAA==",
+              "Title": "HeaderSlice.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\HeaderSlice.cshtml",
+              "RelativeDocumentMoniker": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\HeaderSlice.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\HeaderSlice.cshtml",
+              "RelativeToolTip": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\HeaderSlice.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-13T13:47:31.204Z"
+              "WhenOpened": "2024-10-13T11:55:10.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BillBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\BusinessLayer\\BusinessProcessors\\BillBusiness.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\BusinessProcessors\\BillBusiness.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\BusinessLayer\\BusinessProcessors\\BillBusiness.cs",
-              "RelativeToolTip": "BusinessLayer\\BusinessProcessors\\BillBusiness.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAASwBUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T12:10:18.207Z"
+              "DocumentIndex": 5,
+              "Title": "DetailSlice.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\DetailSlice.cshtml",
+              "RelativeDocumentMoniker": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\DetailSlice.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Views\\Bill\\DetailSlice.cshtml",
+              "RelativeToolTip": "Bruh1\\Areas\\BillOperations\\Views\\Bill\\DetailSlice.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T09:23:00.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BillProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ProviderLayer\\Processors\\BillProcessor.cs",
-              "RelativeDocumentMoniker": "ProviderLayer\\Processors\\BillProcessor.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ProviderLayer\\Processors\\BillProcessor.cs",
-              "RelativeToolTip": "ProviderLayer\\Processors\\BillProcessor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "BillController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Controllers\\BillController.cs",
+              "RelativeDocumentMoniker": "Bruh1\\Areas\\BillOperations\\Controllers\\BillController.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\Areas\\BillOperations\\Controllers\\BillController.cs",
+              "RelativeToolTip": "Bruh1\\Areas\\BillOperations\\Controllers\\BillController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswA4AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T12:09:05.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Test\\Program.cs",
-              "RelativeDocumentMoniker": "Test\\Program.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Test\\Program.cs",
-              "RelativeToolTip": "Test\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T09:09:44.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\IViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\IViewModel.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\IViewModel.cs",
-              "RelativeToolTip": "ViewModels\\IViewModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T06:49:43.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BillDetail.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\Bills\\BillDetail.cs",
-              "RelativeDocumentMoniker": "ViewModels\\Bills\\BillDetail.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\ViewModels\\Bills\\BillDetail.cs",
-              "RelativeToolTip": "ViewModels\\Bills\\BillDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T06:49:29.5Z"
+              "WhenOpened": "2024-10-13T11:54:39.262Z",
+              "EditorCaption": ""
             }
           ]
         }

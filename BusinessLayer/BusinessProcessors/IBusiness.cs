@@ -6,8 +6,8 @@ namespace BusinessLayer.BusinessProcessors
 {
     public interface IBusiness<T> where T : IEntityModel
     {
-        Task<(IEnumerable<T>, int maxID)> GetAll();
-        Task<(bool success, int ID)> Update(T parameters);
+        Task<(IEnumerable<T>, object ReturnData)> GetAll();
+        Task<(bool success, object ReturnData)> Update(T parameters);
         Task<int> Delete(int id);
          
     }

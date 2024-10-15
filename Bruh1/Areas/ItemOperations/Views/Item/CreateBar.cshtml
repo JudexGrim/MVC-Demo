@@ -15,11 +15,11 @@
         @maxID
     </td>
     <td style="border:0px" id="create-name">
-        @CustomHtmlHelpers.InputText(true, "edit-name", "Name","Name", "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")")
+        @CustomHtmlHelpers.InputText(true, "edit-name", "Name","Name", "Index.HandleKeyEvent(event, 'CreateItem', " + Model.ID + ")")
         @Html.ValidationMessageFor(Model => Model.Name, "", new { @class = "text-danger" })
     </td>
     <td style="border:0px" id="create-price">
-        @CustomHtmlHelpers.InputNumber(true, "edit-price", "Price", "0.00", "Index.HandleKeyEvent(event, 'EditItem', " + Model.ID + ")", "0.01", "0")
+        @CustomHtmlHelpers.InputNumber(true, "edit-price", "Price", "0.00", "Index.HandleKeyEvent(event, 'CreateItem', " + Model.ID + ")", "0.01", "0")
         @Html.ValidationMessageFor(Model => Model.Price, "", new { @class = "text-danger" })
     </td>
     <td style="border:0px" >

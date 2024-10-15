@@ -1,18 +1,17 @@
 ﻿let Index = {
 
     HandleKeyEvent: function (event) {
-
         if (event.key === 'Enter') {
-
             event.preventDefault();
-            var id = event.currentTarget.dataset.id
+            event.stopPropagation();
+
+            var id = event.currentTarget.dataset.id;
 
             if (event.currentTarget.closest('#row-create') !== null) {
-
                 document.querySelector('#row-create #save-btn').click();
-            } else 
-            document.querySelector(`#row-${id}[data-type="edit"] #save-btn`).click();
-            
+            } else {
+                document.querySelector(`#row-${id}[data-type="edit"] #save-btn`).click();
+            }
         }
     },
 

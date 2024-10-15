@@ -22,7 +22,7 @@ namespace MVC.Areas.ClientOperations.Controllers
         {
             var queryReturn = await _clientProvider.GetAll();
             var clientModels = queryReturn.Item1;
-            int maxID = queryReturn.maxID;
+            int maxID = (int)queryReturn.ReturnData;
             maxID++;
             ViewBag.maxID = maxID;
             return View(clientModels);
@@ -38,7 +38,7 @@ namespace MVC.Areas.ClientOperations.Controllers
             {
                 var updateReturn = await _clientProvider.Update(model);
                 bool isSuccess = updateReturn.success;
-                int maxID = updateReturn.ID;
+                int maxID = (int)updateReturn.ReturnData;
 
                 return createresponse(isSuccess, "Done.");
             }

@@ -14,10 +14,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", "{80A250E9-46AA-449F-9931-E2686DE8B235}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityModels", "EntityModels", "{9DAE0058-68E9-4E36-A602-7DB40092EE19}"
-	ProjectSection(SolutionItems) = preProject
-		ViewModels\Client.cs = ViewModels\Client.cs
-		ViewModels\Item.cs = ViewModels\Item.cs
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewModels", "ViewModels\ViewModels.csproj", "{9180DEC6-7205-4C67-A9A9-BE57AA66B949}"
 EndProject

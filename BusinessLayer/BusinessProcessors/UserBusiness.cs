@@ -13,7 +13,7 @@ namespace BusinessLayer.BusinessProcessors
 {
     public class UserBusiness : Disposer, IBusiness<User>
     {
-        public async Task<(IEnumerable<User>, int maxID)> GetAll()
+        public async Task<(IEnumerable<User>, object ReturnData)> GetAll()
         {
             using DAL db = new DAL();
             db._params = new Dapper.DynamicParameters();
@@ -23,7 +23,7 @@ namespace BusinessLayer.BusinessProcessors
             return (result, maxID);
         }
 
-        public async Task<(bool success, int ID)> Update(User parameters)
+        public async Task<(bool success, object ReturnData)> Update(User parameters)
         {
             using DAL db = new DAL();
             db._params = new Dapper.DynamicParameters(parameters);

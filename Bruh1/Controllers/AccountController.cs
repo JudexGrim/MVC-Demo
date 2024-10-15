@@ -95,5 +95,16 @@ namespace MVC.Controllers
 
             await HttpContext.SignInAsync("CookieAuth", new ClaimsPrincipal(claimsIdentity));
         }
+
+        public IActionResult Login(string returnUrl = null)
+        {
+            ViewData["ReturnUrl"] = returnUrl;
+            return View();
+        }
+
+        public IActionResult LoginFailed()
+        {
+            return PartialView();
+        }
     }
 }

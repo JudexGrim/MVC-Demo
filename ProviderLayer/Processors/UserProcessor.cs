@@ -11,7 +11,7 @@ namespace ProviderLayer.Processors
 {
     public class UserProcessor : Disposer, IProviderProcessor<User>
     { 
-        public async Task<(IEnumerable<User>, int maxID)> GetAll()
+        public async Task<(IEnumerable<User>, object ReturnData)> GetAll()
         {
             using UserBusiness userBusiness = new UserBusiness();
             var result = await userBusiness.GetAll();
@@ -23,10 +23,10 @@ namespace ProviderLayer.Processors
                                      Email = r.Email,
                                      Password = r.Password
                                  };
-            return (userViewModels, result.maxID);
+            return (userViewModels, result.ReturnData);
         }
 
-        public async Task<(bool success, int ID)> Update(User parameters)
+        public async Task<(bool success, object ReturnData)> Update(User parameters)
         {
             var entityUser = new EntityModels.User 
             {
@@ -38,7 +38,7 @@ namespace ProviderLayer.Processors
             using UserBusiness userBusiness = new UserBusiness();
             var result = await userBusiness.Update(entityUser);
            
-            return (result.success, result.ID);
+            return (result.success, (int)result.ReturnData);
         }
 
         public async Task<(bool success, int ID)> Create(User parameters)

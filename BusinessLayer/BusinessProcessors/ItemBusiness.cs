@@ -13,7 +13,7 @@ namespace BusinessLayer.BusinessProcessors
 {
     public class ItemBusiness : Disposer, IBusiness<Item>
     {
-        public async Task<(IEnumerable<Item>, int maxID)> GetAll()
+        public async Task<(IEnumerable<Item>, object ReturnData)> GetAll()
         {
             using (DAL DB = new DAL())
             {
@@ -27,7 +27,7 @@ namespace BusinessLayer.BusinessProcessors
             }
         }
 
-        public async Task<(bool success, int ID)> Update(Item parameters)
+        public async Task<(bool success, object ReturnData)> Update(Item parameters)
         {
             using DAL DB = new DAL();
             DB._params = new DynamicParameters(parameters);

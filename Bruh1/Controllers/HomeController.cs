@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using MVC.Attributes;
 using ProviderLayer.Processors;
 using System.Diagnostics;
 using ViewModels;
 
 namespace MVC.Controllers
 {
- 
+    [OOAuthorize]
     public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;
@@ -29,17 +30,6 @@ namespace MVC.Controllers
         {
             if (ModelState.IsValid)
                 ViewBag.id = id;
-            return PartialView();
-        }
-
-        public IActionResult Login(string returnUrl = null)
-        {
-            ViewData["ReturnUrl"] = returnUrl;
-            return View();
-        }
-
-        public IActionResult LoginFailed()
-        {
             return PartialView();
         }
 

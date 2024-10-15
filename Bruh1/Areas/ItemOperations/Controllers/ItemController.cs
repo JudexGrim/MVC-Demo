@@ -27,7 +27,7 @@ namespace MVC.Areas.ItemOperations.Controllers
         {
             var queryResult = await _itemProvider.GetAll();
             var Models = queryResult.Item1;
-            var maxID = queryResult.maxID;
+            var maxID = (int)queryResult.ReturnData;
             maxID++; 
             ViewBag.maxID = maxID;
             return View(Models);
@@ -40,7 +40,7 @@ namespace MVC.Areas.ItemOperations.Controllers
                 if (ModelState.IsValid)
                 {
                     var update = await _itemProvider.Update(model);
-                    var maxID = update.ID;
+                    var maxID = update.ReturnData;
                 
 
                     return createresponse(update.success, "Good", new {maxID, model});
@@ -58,7 +58,7 @@ namespace MVC.Areas.ItemOperations.Controllers
         public async Task<IActionResult> CreateBar()
         {
             var queryResult = await _itemProvider.GetAll();
-            int maxID = queryResult.maxID;
+            int maxID = (int)queryResult.ReturnData;
             maxID++;
             ViewBag.maxID = maxID;
             return PartialView();

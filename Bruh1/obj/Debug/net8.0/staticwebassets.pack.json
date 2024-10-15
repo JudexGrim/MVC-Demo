@@ -5,8 +5,24 @@
       "PackagePath": "staticwebassets\\MVC.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Media\\Images\\Background.png",
-      "PackagePath": "staticwebassets\\Media\\Images\\Background.png"
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Media\\Images\\BackGround1.png",
+      "PackagePath": "staticwebassets\\Media\\Images\\BackGround1.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Media\\Images\\Stock Images\\Logo.ai",
+      "PackagePath": "staticwebassets\\Media\\Images\\Stock Images\\Logo.ai"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Media\\Images\\Stock Images\\pexels-cenali-2733918.jpg",
+      "PackagePath": "staticwebassets\\Media\\Images\\Stock Images\\pexels-cenali-2733918.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Media\\Images\\Stock Images\\pexels-pixabay-264636.jpg",
+      "PackagePath": "staticwebassets\\Media\\Images\\Stock Images\\pexels-pixabay-264636.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Media\\Logo.svg",
+      "PackagePath": "staticwebassets\\Media\\Logo.svg"
     },
     {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Styles.css",
@@ -23,6 +39,10 @@
     {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\css\\Style.css",
       "PackagePath": "staticwebassets\\css\\Style.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\css\\Style.min.css",
+      "PackagePath": "staticwebassets\\css\\Style.min.css"
     },
     {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\favicon.ico",

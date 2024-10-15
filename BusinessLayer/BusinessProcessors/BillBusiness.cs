@@ -1,4 +1,5 @@
 ﻿
+using CoreLib;
 using Dapper;
 using DataAccessLayer;
 using EntityModels.Bills;
@@ -11,51 +12,89 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.BusinessProcessors
 {
-    class BillBusiness : IBusiness<BillHeader>
+    public class BillBusiness :Disposer,  IBusiness<BillHeader>
     {
-        
-        public async Task<(IEnumerable<BillHeader>, int maxID)> GetAll()
+        public async Task<(IEnumerable<BillHeader>, object ReturnData)> GetAll()
+        {
+            using (DAL DB = new DAL())
+            {
+                DB._params = new DynamicParameters();
+                DB._params.Add("@maxID", dbType: DbType.Int32, direction: ParameterDirection.Output);
+                
+
+                var queryResult = await DB.ExecQuery<BillHeader>("ViewBillHeaders");
+                int maxID = DB._params.Get<int>("@maxID");
+                
+
+                return (queryResult, maxID);
+            }
+        }
+
+        public async Task<(bool success, object ReturnData)> Update(BillHeader parameters)
+        {
+            using DAL DB = new DAL();
+            DB._params = new DynamicParameters();
+
+            DB._params.Add("@ID", parameters.ID, dbType: DbType.Int32, direction: ParameterDirection.InputOutput);
+            DB._params.Add("@ClientID", parameters.ClientID);
+            DB._params.Add("@Type", parameters.Type);
+            DB._params.Add("@BillDate", parameters.BillDate);
+            DB._params.Add("@CreatedTime", parameters.CreatedTime);
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("HeaderID", typeof(int));
+            dt.Columns.Add("ItemID", typeof(int));
+            dt.Columns.Add("Amount", typeof(decimal));
+            dt.Columns.Add("Price", typeof(decimal));
+
+            foreach (var item in parameters.Details)
+            {
+               dt.Rows.Add(item.ID, item.HeaderID, item.ItemID, item.Amount, item.Price);
+            }
+
+            DB._params.Add("@DetailList", dt.AsTableValuedParameter("BillDetailTVP"));
+
+
+            var success = await DB.ExecNonQuery("Bill_CreateEdit") != 0;
+
+            int maxID;
+            int maxDetailID;
+
+            try
+            {
+                maxID = DB._params.Get<int>("@maxID");
+                maxDetailID = DB._params.Get<int>("@maxDetailID");
+            }
+            catch(Exception)
+            {
+                maxID = 0;
+                maxDetailID = 0;
+            }
+            return (success, new { maxID = maxID, maxDetailID = maxDetailID });
+        }
+
+        public async Task<int> Delete(int id)
+        {
+            using DAL DB = new DAL();
+            return await DB.ExecNonQuery($"EXEC BillHeader_Delete @ID = {id}");
+        }
+
+
+        public async Task<(IEnumerable<BillDetail>, object ReturnData)> GetDetails()
         {
             using (DAL DB = new DAL())
             {
                 DB._params = new DynamicParameters();
                 DB._params.Add("@maxID", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-                var queryResult = await DB.ExecQuery<BillHeader>("ViewAllItems");
-                var maxID = DB._params.Get<int>("@maxID");
+
+                var queryResult = await DB.ExecQuery<BillDetail>("ViewBillDetails");
+                int maxID = DB._params.Get<int>("@maxID");
+
 
                 return (queryResult, maxID);
             }
-        }
-
-        public async Task<(bool success, int ID)> Update(BillHeader parameters)
-        {
-            using DAL DB = new DAL();
-            DB._params = new DynamicParameters(parameters);
-            DB._params.Add("@ID", parameters.ID, dbType: DbType.Int32, direction: ParameterDirection.InputOutput);
-            DB._params.Add("@ClientID", parameters.ClientID);
-            DB._params.Add("@BillDate", parameters.BillDate);
-            DB._params.Add("@CreatedTime", parameters.BillDate);
-
-            foreach (var item in parameters.Details)
-            {
-                DB._params.Add("@DetailID", item.ID, dbType: DbType.Int32, direction: ParameterDirection.InputOutput);
-                DB._params.Add("@ItemID", item.ItemID);
-                DB._params.Add("@HeaderID", item.HeaderID);
-                DB._params.Add("@Price", item.Price);
-                DB._params.Add("@Total", item.Amount);
-                await DB.ExecNonQuery("BillDetail_CreateEdit");
-            }
-            
-            bool rows = await DB.ExecNonQuery("Items_CreateEdit") != 0;
-            int ID = DB._params.Get<int>("@ID");
-            return (rows, ID);
-        }
-
-        public async Task<int> Delete(int id)
-        {
-            using DAL DB = new DAL();
-            return await DB.ExecNonQuery($"EXEC Item_Delete @ID = {id}");
         }
     }
 }

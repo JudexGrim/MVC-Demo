@@ -6,9 +6,9 @@ namespace MVC.Helpers.RazorTagHelpers
     [HtmlTargetElement("SubmitButton")]
     public class SaveButtonTagHelper : TagHelper
     {
-        public string id { get; set; }
-        public string type { get; set; }
-        public string Class { get; set; }
+        public string? id { get; set; }
+        public string? type { get; set; }
+        public string? Class { get; set; }
         public string DefaultClass { get; set; } = "btn-success rounded-1 px-3 py-1 text-decoration-none border-0";
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
@@ -25,9 +25,14 @@ namespace MVC.Helpers.RazorTagHelpers
                 output.Content.SetContent(content);
             }
 
-            
+            if (type != null)
+            {
+                output.Attributes.SetAttribute("type", type);
+            }
+            else
+            {
                 output.Attributes.SetAttribute("type", "button");
-            
+            }
 
             if (Class != null)
             {

@@ -1,4 +1,64 @@
 ﻿@{
+    List<KeyValuePair<string, string>> typeOptions = new List<KeyValuePair<string, string>> { new("Purchase","Purchase"), new("Sale","Sale")};
 
 }
-@model IEnumerable<ViewModels.Bills.BillHeader>
+@model ViewModels.Bills.BillHeader
+@addTagHelper *, MVC
+
+    <tr id="row-@Model.ID" data-type="display">
+
+        <td>
+            <span id="display-id">@Model.ID</Span>
+        </td>
+
+        <td>
+            <span id="display-clientId">@Model.ClientID</Span>
+        </td>
+
+        <td>
+            <span id="display-type">@Model.Type</Span>
+        </td>
+
+        <td>
+            <span id="display-timeCreated">@Model.CreatedTime</Span>
+        </td>
+
+        <td>
+            <span id="display-billTime">@Model.BillDate</Span>
+        </td>
+
+        <td>
+            <EditButton data-id="@Model.ID" onclick="Index.Edit(this)"></EditButton>
+            <DeleteButton data-id="@Model.ID" onclick="Index.Delete(this)"></DeleteButton>
+        </td>
+
+    </tr>
+
+    <tr id="row-@Model.ID" data-type="edit" style="display: none">
+
+        <td>
+            <span id="display-id">@Model.ID</Span>
+        </td>
+
+        <td>
+            <TextBox id="edit-clientId" name="ClientID" value="@Model.ClientID" required="required" data-id="@Model.ID" onkeydown="Index.HandleKeyEvent(event)"></TextBox>
+        </td>
+
+        <td>
+            <Dropdown id="edit-type" Name="Type" options="typeOptions"></Dropdown>
+        </td>
+
+        <td>
+            <TextBox id="edit-createdTime" name="CreatedTime" value="@Model.CreatedTime" required="required" data-id="@Model.ID" onkeydown="Index.HandleKeyEvent(event)"></TextBox>
+        </td>
+
+        <td>
+            <TextBox id="edit-billTime" name="BillDate" value="@Model.BillDate" required="required" data-id="@Model.ID" onkeydown="Index.HandleKeyEvent(event)"></TextBox>
+        </td>
+
+        <td>
+            <SaveButton data-id="@Model.ID" onclick="Index.EditBill(this)"></SaveButton>
+            <CancelButton data-id="@Model.ID" onclick="Index.Cancel(this)"></CancelButton>
+        </td>
+
+    </tr>

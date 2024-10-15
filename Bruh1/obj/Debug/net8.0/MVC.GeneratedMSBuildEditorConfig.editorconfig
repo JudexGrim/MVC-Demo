@@ -58,20 +58,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSXRlbU9wZXJhdGlvbnNcVmlld3NcSXRlbVxJdGVtU2xpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Account/LoginFailed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbkZhaWxlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Home/ConfirmDelete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maXJtRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Home/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Home/LoginFailed.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbkZhaWxlZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/Documents/GitHub Repos/MVC-Demo/Bruh1/Views/Home/Privacy.cshtml]

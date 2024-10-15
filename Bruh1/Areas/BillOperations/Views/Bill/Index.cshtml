@@ -1,1 +1,80 @@
-﻿
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int maxID = ViewBag.maxID;
+    List<KeyValuePair<string, string>> typeOptions = new List<KeyValuePair<string, string>> { new("Purchase","Purchase"), new("Sale","Sale")};
+}
+@model IEnumerable<ViewModels.Bills.BillHeader>
+@addTagHelper *, MVC
+
+<h1>Bills</h1>
+@using (Html.BeginForm("Submission", "Bill", FormMethod.Post, new { @onsubmit = "return false", id = "submit-form" }))
+{
+     @Html.AntiForgeryToken()
+     <table class="table text-light">
+
+         <colgroup>
+        <col style="width: 5%" />
+        <col style="width: 5%" />
+        <col style="width: 20%" />
+        <col style="width: 25%" />
+        <col style="width: 25%" />
+        <col style="width: 20%" />
+        </colgroup>
+
+        <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>Client ID</th>
+                <th>Type</th>
+                <th>Time Created</th>
+                <th>Bill Time</th>
+                <th></th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @foreach (var header in Model)
+            {
+                await Html.RenderPartialAsync("HeaderSlice", header);
+            }
+
+            <tr id="row-create" style="display:none">
+
+                <td>
+                    <span id="display-id">@maxID</Span>
+                </td>
+
+                <td>
+                    <TextBox id="create-clientId" name="ClientID" value="Client ID" required="required" onkeydown="Index.HandleKeyEvent(event)"></TextBox>
+                </td>
+
+                <td>
+                    <Dropdown id="create-type" Name="Type" options="typeOptions"></Dropdown>
+                </td>
+
+                <td>
+                    <TextBox id="create-createdTime" name="CreatedTime" value="CreatedTime" required="required" onkeydown="Index.HandleKeyEvent(event)"></TextBox>
+                </td>
+
+                <td>
+                    <TextBox id="create-billTime" name="BillDate" value="BillDate" required="required" onkeydown="Index.HandleKeyEvent(event)"></TextBox>
+                </td>
+
+                <td>
+                    <SaveButton data-id="ID" onclick="Index.EditBill(this)"></SaveButton>
+                    <CancelButton data-id="ID" onclick="Index.Cancel(this)"></CancelButton>
+                </td>
+
+            </tr>
+
+            <tr id="row-create-btn">
+                <CreateButton></CreateButton>
+            </tr>
+
+        </tbody>
+
+     </table>
+}

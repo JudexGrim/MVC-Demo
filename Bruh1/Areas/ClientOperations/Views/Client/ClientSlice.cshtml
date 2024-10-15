@@ -19,8 +19,8 @@
     </td>
 
     <td>
-        <EditButton data-id="@Model.ID"></EditButton>
-        <DeleteButton data-id="@Model.ID"></DeleteButton>
+        <EditButton data-id="@Model.ID" onclick="Index.Edit(this)"></EditButton>
+        <DeleteButton data-id="@Model.ID" onclick="Index.Delete(this)"></DeleteButton>
     </td>
 </tr>
 
@@ -32,7 +32,7 @@
     </td>
 
     <td>
-        <TextBox id="edit-name" name="Name" value="@Model.Name" required="required" data-id="@Model.ID"></TextBox>
+        <TextBox id="edit-name" name="Name" value="@Model.Name" required="required" data-id="@Model.ID" onkeydown="Index.HandleKeyEvent(event)"></TextBox>
         @Html.ValidationMessageFor(Model => Model.Name, "", new { @class = "text-danger" })
     </td>
 
@@ -41,7 +41,7 @@
     </td>
 
     <td>
-        <SaveButton data-id="@Model.ID"></SaveButton>
-        <CancelButton data-id="@Model.ID"></CancelButton>
+        <SaveButton data-id="@Model.ID" onclick="Index.EditClient(this)"></SaveButton>
+        <CancelButton data-id="@Model.ID" onclick="Index.Cancel(this)"></CancelButton>
     </td>
 </tr>
