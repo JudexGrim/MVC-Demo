@@ -25,6 +25,22 @@
       "PackagePath": "staticwebassets\\Media\\Logo.svg"
     },
     {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Buttons.scss",
+      "PackagePath": "staticwebassets\\Sass\\Buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Inputs.scss",
+      "PackagePath": "staticwebassets\\Sass\\Inputs.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Layouts.scss",
+      "PackagePath": "staticwebassets\\Sass\\Layouts.scss"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Modals.scss",
+      "PackagePath": "staticwebassets\\Sass\\Modals.scss"
+    },
+    {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Styles.css",
       "PackagePath": "staticwebassets\\Sass\\Styles.css"
     },
@@ -37,12 +53,12 @@
       "PackagePath": "staticwebassets\\Sass\\Styles.scss"
     },
     {
-      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\css\\Style.css",
-      "PackagePath": "staticwebassets\\css\\Style.css"
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\css\\Styles.css",
+      "PackagePath": "staticwebassets\\css\\Styles.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\css\\Style.min.css",
-      "PackagePath": "staticwebassets\\css\\Style.min.css"
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\css\\Styles.min.css",
+      "PackagePath": "staticwebassets\\css\\Styles.min.css"
     },
     {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\favicon.ico",

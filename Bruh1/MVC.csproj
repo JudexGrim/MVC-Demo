@@ -34,4 +34,8 @@
     <ProjectReference Include="..\ProviderLayer\ProviderLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+  </ItemGroup>
+
 </Project>

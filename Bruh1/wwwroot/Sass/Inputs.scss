@@ -1,0 +1,36 @@
+
+$background-color-light: #cfccc8;
+$accent-color-light: #8c8c8b;
+
+$background-color-dark: #5b5766;
+$accent-color-dark: #918f96;
+
+@mixin field-base ($bg-color, $main-color: #3d3d3c, $accent-color, $brdr-radius: 5px, $border: 0px) {
+    text-align: left;
+    display: inline-block;
+    padding: 5px;
+    border: $border;
+    border-radius: $brdr-radius;
+    background-color: $bg-color;
+    color: $main-color;
+    transition: 0.3s;
+
+    &:focus {
+        cursor: text;
+        background-color: darken($bg-color, 10%);
+    }
+
+    &::placeholder {
+        color: $accent-color;
+    }
+}
+
+.field-input-light {
+
+    @include field-base($bg-color: $background-color-light, $main-color: #3d3d3c, $accent-color: $accent-color-light);
+}
+
+.field-input-dark {
+
+    @include field-base($bg-color: $background-color-dark, $main-color: #b5b5b3, $accent-color: $accent-color-dark);
+}

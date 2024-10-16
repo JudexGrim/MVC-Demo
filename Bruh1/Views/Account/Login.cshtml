@@ -5,32 +5,40 @@
 @model ViewModels.LoginViewModel;
 @addTagHelper *, MVC
 
-<div class="background-container background-container-light" style="width:40%">
-    @using (Html.BeginForm("AttemptLogin", "Account", FormMethod.Post, new {  @id = "submitLoginForm" }))
-    {
-        @Html.AntiForgeryToken()
-        <div>
-            <label class="w-100">
-                Username / Email
-                <TextBox id="User" required="required" name="User"></TextBox>
-            @Html.ValidationMessageFor(Model => Model.User, "", new { @onsubmit="return false;", @class = "text-danger" })
-                </label>
-        </div>
+<div id="wrapper" class=" d-flex h-100">
 
-        <div>
-            <label class="w-100">
-                Password
-                <TextBox id="Password" required="required" name="Password" ></TextBox>
-            @Html.ValidationMessageFor(Model => Model.Password, "", new { @class = "text-danger" })
-            </label>
-        </div>
+    <div class="d-none d-md-block login-background fill"></div>
 
-        @Html.Hidden("ReturnUrl", ViewData["ReturnUrl"])
+    <div class="col-12 col-md-6 col-xl-4 login-pane">
 
-        <div class="my-1" id="login-btn">
-            <SubmitButton>Login</SubmitButton>
+        <div class="w-25 position-relative">
+           <img src="~/Media/Logo.svg" style="width: 100%"/>
+       </div>
+
+        <div class="login-form">
+            
+            @using (Html.BeginForm("AttemptLogin", "Account", FormMethod.Post, new { @onsubmit = "return false;", @id = "submitLoginForm" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div>
+                    <TextBox id="User" required="required" name="User" class="field-input-light" placeholder="Username"></TextBox>
+                    @Html.ValidationMessageFor(Model => Model.User, "", new { @class = "text-danger" })
+                </div>
+
+                <div>
+                    <TextBox id="Password" required="required" name="Password" class="field-input-light" placeholder="Password"></TextBox>
+                    @Html.ValidationMessageFor(Model => Model.Password, "", new { @class = "text-danger" })
+                </div>
+
+                <SubmitButton id ="login-btn">Login</SubmitButton>
+
+                @Html.Hidden("ReturnUrl", ViewData["ReturnUrl"])
+            }
+
         </div>
-    }
+    </div>
+
 </div>
 
 <script src="~/js/Scripts/Views/Home/Login.js"></script>

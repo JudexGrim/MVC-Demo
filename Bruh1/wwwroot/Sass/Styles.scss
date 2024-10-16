@@ -1,0 +1,48 @@
+@import "Buttons.scss";
+@import "Layouts.scss";
+@import "Modals.scss";
+@import "Inputs.scss";
+@import "Media.scss";
+
+$bg-color-light: #f7f5f2;
+$main-color-light: #474254;
+$accent-color-light: #f7f5f2;
+
+$bg-color-dark: #474254;
+$main-color-dark: #f7f5f2;
+$accent-color-dark: #f7f5f2;
+
+.rtl {
+    direction: rtl;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.light {
+
+    background-color: $bg-color-light;
+    color: $main-color-light;
+}
+
+.dark{
+
+    background-color: $bg-color-dark;
+    color: $main-color-dark;
+}
+
+.fill {
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+html, body {
+
+    width: 100;
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}

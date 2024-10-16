@@ -46,9 +46,9 @@ let Login = {
     LoginFailed: function () {
 
         var settings = {
-            url: '/Home/LoginFailed',
+            url: '/Account/LoginFailed',
             methodType: 'GET',
-            target: `#login-btn`,
+            target: `#wrapper`,
             modalID: `incorrectLogin`
         }
 
@@ -66,7 +66,7 @@ let Login = {
 
         document.querySelectorAll('input').forEach((input) => input.addEventListener('keydown', Login.HandleKeyEvent))
 
-        document.querySelector('#login-btn button').addEventListener('click', () => Login.AttemptLogin());
+        document.querySelector('#login-btn').addEventListener('click', () => Login.AttemptLogin());
     }
 }
 

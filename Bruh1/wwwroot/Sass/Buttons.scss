@@ -1,0 +1,44 @@
+
+@mixin btn-base ($bg-color: white, $text-color : black, $padding: 5px, $brdr-radius: 5px) {
+    
+    text-align: center;
+    display: inline-block;
+
+    padding: $padding;
+    border: 0px;
+    border-radius: $brdr-radius;
+
+    background-color: $bg-color;
+    color: $text-color;
+
+    transition: 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+.btn-link {
+    @include btn-base($bg-color: #d4cac3, $text-color: #ebecf2);
+}
+
+.btn-submit {
+    @include btn-base($bg-color: #338a33, $text-color: #ebecf2);
+}
+
+.btn-cancel {
+    @include btn-base($bg-color: #a3602f, $text-color: #ebecf2);
+}
+
+.btn-create {
+    @include btn-base($bg-color: #38468f, $text-color: #ebecf2);
+}
+
+.btn-edit {
+    @include btn-base($bg-color: #a8a46c, $text-color: #ebecf2);
+}
+
+.btn-delete {
+    @include btn-base($bg-color: #a32f2f, $text-color: #ebecf2);
+}
