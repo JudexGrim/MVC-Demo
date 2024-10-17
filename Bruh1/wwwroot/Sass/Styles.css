@@ -1,1 +1,184 @@
-﻿
+.btn-link {
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #d4cac3;
+  color: #ebecf2;
+  transition: 0.3s;
+}
+.btn-link:hover {
+  cursor: pointer;
+  background-color: rgb(190.7087378641, 175.7572815534, 165.2912621359);
+}
+
+.btn-submit {
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #338a33;
+  color: #ebecf2;
+  transition: 0.3s;
+}
+.btn-submit:hover {
+  cursor: pointer;
+  background-color: rgb(37.2380952381, 100.7619047619, 37.2380952381);
+}
+
+.btn-cancel {
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #a3602f;
+  color: #ebecf2;
+  transition: 0.3s;
+}
+.btn-cancel:hover {
+  cursor: pointer;
+  background-color: rgb(123.4142857143, 72.6857142857, 35.5857142857);
+}
+
+.btn-create {
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #38468f;
+  color: #ebecf2;
+  transition: 0.3s;
+}
+.btn-create:hover {
+  cursor: pointer;
+  background-color: rgb(41.648241206, 52.0603015075, 106.351758794);
+}
+
+.btn-edit {
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #a8a46c;
+  color: #ebecf2;
+  transition: 0.3s;
+}
+.btn-edit:hover {
+  cursor: pointer;
+  background-color: rgb(141.3461538462, 137.5, 83.6538461538);
+}
+
+.btn-delete {
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #a32f2f;
+  color: #ebecf2;
+  transition: 0.3s;
+}
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: rgb(123.4142857143, 35.5857142857, 35.5857142857);
+}
+
+.login-background {
+  display: inline;
+  background: #AF8C71;
+  z-index: 1;
+  position: relative;
+}
+
+.login-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  justify-self: right;
+}
+
+.login-form {
+  width: 80%;
+  text-align: center;
+}
+.login-form * {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.field-input-light {
+  text-align: left;
+  display: inline-block;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #cfccc8;
+  color: #3d3d3c;
+  transition: 0.3s;
+}
+.field-input-light:focus {
+  cursor: text;
+  background-color: rgb(183.2330097087, 178.7475728155, 172.7669902913);
+}
+.field-input-light::placeholder {
+  color: #8c8c8b;
+}
+
+.field-input-dark {
+  text-align: left;
+  display: inline-block;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #5b5766;
+  color: #b5b5b3;
+  transition: 0.3s;
+}
+.field-input-dark:focus {
+  cursor: text;
+  background-color: rgb(66.4444444444, 63.5238095238, 74.4761904762);
+}
+.field-input-dark::placeholder {
+  color: #918f96;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.light {
+  background-color: #f7f5f2;
+  color: #474254;
+}
+
+.dark {
+  background-color: #474254;
+  color: #f7f5f2;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=Styles.css.map */

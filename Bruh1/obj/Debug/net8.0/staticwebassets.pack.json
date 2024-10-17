@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\Sass\\Layouts.scss"
     },
     {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Media.scss",
+      "PackagePath": "staticwebassets\\Sass\\Media.scss"
+    },
+    {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Modals.scss",
       "PackagePath": "staticwebassets\\Sass\\Modals.scss"
     },

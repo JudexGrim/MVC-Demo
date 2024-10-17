@@ -1,4 +1,4 @@
-﻿using EntityModels.Bills;
+﻿using ViewModels.Bills;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using MVC.Areas.ItemOperations.Controllers;

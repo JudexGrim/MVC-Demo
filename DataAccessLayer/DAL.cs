@@ -16,13 +16,9 @@ namespace DataAccessLayer
     {
         private readonly string _connection;
         public DynamicParameters _params { get; set; }
-        public DAL()
+        public DAL(string connectionString)
         {
-            var config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())  // Set the current directory path
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)  // Load the appsettings.json
-                .Build();
-            _connection = config.GetConnectionString("DefaultConnection");
+            _connection = connectionString;
         }
 
         public async Task<IEnumerable<T>> ExecQuery<T>(string  query)
