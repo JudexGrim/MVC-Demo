@@ -8,7 +8,7 @@ namespace MVC.Helpers.RazorTagHelpers
     {
         public string id { get; set; }
         public string Class { get; set; }
-        public string DefaultClass { get; set; } = "btn btn-light dropdown-toggle";
+        public string DefaultClass { get; set; } = "btn-link dropdown-toggle";
         public IEnumerable<KeyValuePair<string, string>> Options { get; set; }
 
         public override void Process(TagHelperContext context, TagHelperOutput output)

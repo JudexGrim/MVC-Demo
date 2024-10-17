@@ -8,7 +8,7 @@ namespace MVC.Helpers.RazorTagHelpers
         public string id { get; set; }
 
         public string Class { get; set; }
-        public string DefaultClass { get; set; } = "btn-warning rounded-1 px-3 py-1 text-decoration-none border-0";
+        public string DefaultClass { get; set; } = "btn-cancel";
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "button";
