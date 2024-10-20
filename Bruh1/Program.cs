@@ -4,6 +4,8 @@ using Microsoft.IdentityModel.Tokens;
 using ProviderLayer;
 using ProviderLayer.Processors;
 using System.Text;
+using DataAccessLayer;
+
 namespace MVC
 {
     public class Program  
@@ -36,8 +38,7 @@ namespace MVC
                     IssuerSigningKey = new SymmetricSecurityKey(key)
                 };
             });
-
-
+            
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddAuthorization();
             builder.Services.AddControllersWithViews();

@@ -14,8 +14,6 @@ namespace MVC.Controllers
 
     public class AccountController : BaseController
     {
-        private IConfiguration _configuration;
-
         public AccountController(IConfiguration configuration)
         {
            _configuration = configuration;
@@ -27,7 +25,7 @@ namespace MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                using AuthenticationProcessor authenticationProcessor = new AuthenticationProcessor();
+                using AuthenticationProcessor authenticationProcessor = new AuthenticationProcessor(_configuration);
                 var result = await authenticationProcessor.TryLogin(loginInfo);
 
                 if (result.success)

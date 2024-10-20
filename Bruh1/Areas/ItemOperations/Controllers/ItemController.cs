@@ -15,17 +15,18 @@ namespace MVC.Areas.ItemOperations.Controllers
     public class ItemController : BaseController
     {
         private readonly ILogger<ItemController> _logger;
-        private readonly IProviderProcessor<Item> _itemProvider = new ItemProcessor();
 
-        public ItemController(ILogger<ItemController> logger)
+        public ItemController(ILogger<ItemController> logger, IConfiguration configuration)
         {
             _logger = logger;
+            _configuration = configuration;
 
         }
          
         public async Task<IActionResult> Index()
         {
-            var queryResult = await _itemProvider.GetAll();
+             using  ItemProcessor itemProvider = new ItemProcessor(_configuration);
+            var queryResult = await itemProvider.GetAll();
             var Models = queryResult.Item1;
             var maxID = (int)queryResult.ReturnData;
             maxID++; 
@@ -39,7 +40,8 @@ namespace MVC.Areas.ItemOperations.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var update = await _itemProvider.Update(model);
+                     using  ItemProcessor itemProvider = new ItemProcessor(_configuration);
+                    var update = await itemProvider.Update(model);
                     var maxID = update.ReturnData;
                 
 
@@ -57,7 +59,8 @@ namespace MVC.Areas.ItemOperations.Controllers
          
         public async Task<IActionResult> CreateBar()
         {
-            var queryResult = await _itemProvider.GetAll();
+             using  ItemProcessor itemProvider = new ItemProcessor(_configuration);
+            var queryResult = await itemProvider.GetAll();
             int maxID = (int)queryResult.ReturnData;
             maxID++;
             ViewBag.maxID = maxID;
@@ -70,7 +73,8 @@ namespace MVC.Areas.ItemOperations.Controllers
         {
             if (ModelState.IsValid)
             {
-                bool isSucess = await _itemProvider.Delete(id);
+                 using  ItemProcessor itemProvider = new ItemProcessor(_configuration);
+                bool isSucess = await itemProvider.Delete(id);
                 return createresponse(isSucess, "Item Deleted Successfully.");
             }
             return createresponse(false, "Data Validation Failed.");

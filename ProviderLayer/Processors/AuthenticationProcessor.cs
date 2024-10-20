@@ -5,15 +5,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using ViewModels;
 
 namespace ProviderLayer.Processors
 {
     public class AuthenticationProcessor : Disposer
     {
+        private IConfiguration _configuration;
+
+        public AuthenticationProcessor(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         public async Task<(bool success, string message, User? userModel)> TryLogin(LoginViewModel login)
         {
-            using UserBusiness userBusiness = new UserBusiness();
+            using UserBusiness userBusiness = new UserBusiness(_configuration);
             try
             {
                 var fetchedUser = await userBusiness.FetchUser(login.User);

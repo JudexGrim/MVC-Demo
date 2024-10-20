@@ -5,6 +5,8 @@ namespace MVC.Controllers
 {
     public class BaseController : Controller
     {
+        protected IConfiguration _configuration;
+        
         public JsonResult createresponse( bool IsSuccess,string Message ="",object Data= null)
         {
             return Json(new { IsSuccess, Message, Data}); 

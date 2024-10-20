@@ -9,14 +9,21 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 
 namespace BusinessLayer.BusinessProcessors
 {
     public class BillBusiness :Disposer,  IBusiness<BillHeader>
     {
+        private readonly string _connectionString;
+
+        public BillBusiness(IConfiguration configuration)
+        {
+            _connectionString = configuration.GetConnectionString("DefaultConnection");
+        }
         public async Task<(IEnumerable<BillHeader>, object ReturnData)> GetAll()
         {
-            using (DAL DB = new DAL())
+            using (DAL DB = new DAL(_connectionString))
             {
                 DB._params = new DynamicParameters();
                 DB._params.Add("@maxID", dbType: DbType.Int32, direction: ParameterDirection.Output);
@@ -32,7 +39,7 @@ namespace BusinessLayer.BusinessProcessors
 
         public async Task<(bool success, object ReturnData)> Update(BillHeader parameters)
         {
-            using DAL DB = new DAL();
+            using DAL DB = new DAL(_connectionString);
             DB._params = new DynamicParameters();
 
             DB._params.Add("@ID", parameters.ID, dbType: DbType.Int32, direction: ParameterDirection.InputOutput);
@@ -76,14 +83,14 @@ namespace BusinessLayer.BusinessProcessors
 
         public async Task<int> Delete(int id)
         {
-            using DAL DB = new DAL();
+            using DAL DB = new DAL(_connectionString);
             return await DB.ExecNonQuery($"EXEC BillHeader_Delete @ID = {id}");
         }
 
 
         public async Task<(IEnumerable<BillDetail>, object ReturnData)> GetDetails()
         {
-            using (DAL DB = new DAL())
+            using (DAL DB = new DAL(_connectionString))
             {
                 DB._params = new DynamicParameters();
                 DB._params.Add("@maxID", dbType: DbType.Int32, direction: ParameterDirection.Output);

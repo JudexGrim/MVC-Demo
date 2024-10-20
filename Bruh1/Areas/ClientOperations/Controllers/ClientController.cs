@@ -11,16 +11,17 @@ namespace MVC.Areas.ClientOperations.Controllers
     public class ClientController : BaseController
     {
         private readonly ILogger<ClientController> _logger;
-        private readonly IProviderProcessor<Client> _clientProvider = new ClientProcessor();
 
-        public ClientController(ILogger<ClientController> logger)
+        public ClientController(ILogger<ClientController> logger, IConfiguration configuration)
         {
             _logger = logger;
+            _configuration = configuration;
         }
 
         public async Task<IActionResult> Index() 
         {
-            var queryReturn = await _clientProvider.GetAll();
+            using ClientProcessor clientProvider = new ClientProcessor(_configuration);
+            var queryReturn = await clientProvider.GetAll();
             var clientModels = queryReturn.Item1;
             int maxID = (int)queryReturn.ReturnData;
             maxID++;
@@ -36,7 +37,8 @@ namespace MVC.Areas.ClientOperations.Controllers
         {
             if (ModelState.IsValid)
             {
-                var updateReturn = await _clientProvider.Update(model);
+                using ClientProcessor clientProvider = new ClientProcessor(_configuration);
+                var updateReturn = await clientProvider.Update(model);
                 bool isSuccess = updateReturn.success;
                 int maxID = (int)updateReturn.ReturnData;
 
@@ -51,7 +53,8 @@ namespace MVC.Areas.ClientOperations.Controllers
         {
             if (ModelState.IsValid)
             {
-                bool isSuccess = await _clientProvider.Delete(id);
+                using ClientProcessor clientProvider = new ClientProcessor(_configuration);
+                bool isSuccess = await clientProvider.Delete(id);
                 return createresponse(isSuccess, "Item Deleted");
             }
             else return createresponse(false, "Delete Form Invalid.");

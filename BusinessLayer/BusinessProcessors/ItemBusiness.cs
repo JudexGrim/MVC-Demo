@@ -8,14 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using Microsoft.Extensions.Configuration;
 
 namespace BusinessLayer.BusinessProcessors
 {
     public class ItemBusiness : Disposer, IBusiness<Item>
     {
+        private readonly  string _connectionString;
+
+        public ItemBusiness(IConfiguration configuration)
+        {
+            _connectionString = configuration.GetConnectionString("DefaultConnection");
+        }
         public async Task<(IEnumerable<Item>, object ReturnData)> GetAll()
         {
-            using (DAL DB = new DAL())
+            using (DAL DB = new DAL(_connectionString))
             {
                 DB._params = new DynamicParameters();
                 DB._params.Add("@maxID", dbType:DbType.Int32, direction:ParameterDirection.Output);
@@ -29,7 +36,7 @@ namespace BusinessLayer.BusinessProcessors
 
         public async Task<(bool success, object ReturnData)> Update(Item parameters)
         {
-            using DAL DB = new DAL();
+            using DAL DB = new DAL(_connectionString);
             DB._params = new DynamicParameters(parameters);
             DB._params.Add("@ID", parameters.ID, dbType: DbType.Int32, direction: ParameterDirection.InputOutput);
             DB._params.Add("@Name", parameters.Name);
@@ -41,7 +48,7 @@ namespace BusinessLayer.BusinessProcessors
 
         public async Task<T> GetItemStock<T>(int id)
         {
-            using (DAL DB = new DAL())
+            using (DAL DB = new DAL(_connectionString))
             {
                 return await DB.ExecScalar<T>($"GetITemStock @ItemID = {id}");
             }
@@ -49,7 +56,7 @@ namespace BusinessLayer.BusinessProcessors
 
         public async Task<int> GetMaxID(string tableName)
         {
-            using (DAL DB = new DAL())
+            using (DAL DB = new DAL(_connectionString))
             {
                 return await DB.ExecScalar<int>($"EXEC GetMaxID '{tableName}'");
             }
@@ -57,7 +64,7 @@ namespace BusinessLayer.BusinessProcessors
 
         public async Task<int> Delete(int id)
         {
-            using DAL DB = new DAL();
+            using DAL DB = new DAL(_connectionString);
             return await DB.ExecNonQuery($"EXEC Item_Delete @ID = {id}");
         }
     }

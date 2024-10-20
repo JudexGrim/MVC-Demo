@@ -6,14 +6,21 @@ using System.Linq;
 using System.Text;
 using ViewModels;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 
 namespace ProviderLayer.Processors
 {
     public class ClientProcessor : Disposer, IProviderProcessor<Client>
     {
+        private IConfiguration _configuration;
+
+        public ClientProcessor(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         public async Task<(IEnumerable<Client>, object ReturnData)> GetAll()
         {
-            using (ClientBusiness Processor = new ClientBusiness())
+            using (ClientBusiness Processor = new ClientBusiness(_configuration))
             {
 
                 var queryResult = await Processor.GetAll();
@@ -34,7 +41,7 @@ namespace ProviderLayer.Processors
 
 		public async Task<(bool success, object ReturnData)> Update(Client parameters)
         {
-            using ClientBusiness Processor = new ClientBusiness();
+            using ClientBusiness Processor = new ClientBusiness(_configuration);
             var EntityClient = new EntityModels.Client
                                 {
                                     ID = parameters.ID,
@@ -47,7 +54,7 @@ namespace ProviderLayer.Processors
 
 		public async Task<bool> Delete(int id)
 		{
-			using ClientBusiness Processor = new ClientBusiness();
+			using ClientBusiness Processor = new ClientBusiness(_configuration);
             bool success = await Processor.Delete(id) != 0;
             return success;
 		}

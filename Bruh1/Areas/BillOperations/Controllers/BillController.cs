@@ -3,20 +3,26 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using MVC.Areas.ItemOperations.Controllers;
 using MVC.Attributes;
+using MVC.Controllers;
 using ProviderLayer.Processors;
 
 namespace MVC.Areas.BillOperations.Controllers
 {
     [OOAuthorizeAttribute]
     [Area("BillOperations")]
-    public class BillController : Controller
+    public class BillController : BaseController
     {
         private readonly ILogger<ItemController> _logger;
-        public readonly BillProcessor _Processor = new BillProcessor();
 
+        public BillController(IConfiguration config, ILogger<ItemController> logger)
+        {
+            _configuration = config;
+        }
+        
         public async Task<IActionResult> Index()
         {
-            var result = await _Processor.GetAll();
+            using BillProcessor billProcessor = new BillProcessor(_configuration);
+            var result = await billProcessor.GetAll();
 
             int[] idArray = result.ReturnData as int[];
 

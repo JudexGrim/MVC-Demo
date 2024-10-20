@@ -8,15 +8,22 @@ using System.Threading.Tasks;
 using CoreLib;
 using System.Data;
 using Dapper;
+using Microsoft.Extensions.Configuration;
 
 namespace BusinessLayer.BusinessProcessors
 {
     public class ClientBusiness : Disposer, IBusiness<Client>
     {
+        private readonly string _connectionString;
+
+        public ClientBusiness(IConfiguration configuration)
+        {
+            _connectionString = configuration.GetConnectionString("DefaultConnection");
+        }
         public async Task<(IEnumerable<Client>, object ReturnData)> GetAll()
         {
 
-            using DAL DB = new DAL();
+            using DAL DB = new DAL(_connectionString);
 
             DB._params = new DynamicParameters();
             DB._params.Add("@maxID", dbType: DbType.Int32, direction:ParameterDirection.Output);
@@ -27,7 +34,7 @@ namespace BusinessLayer.BusinessProcessors
 
         public async Task<(bool success, object ReturnData)> Update(Client parameters)        
         {
-            using DAL DB = new DAL();
+            using DAL DB = new DAL(_connectionString);
             DB._params = new DynamicParameters();
             DB._params.Add("@ID", parameters.ID, dbType: DbType.Int32, direction: ParameterDirection.InputOutput);
             DB._params.Add("@Type", parameters.Type);
@@ -41,7 +48,7 @@ namespace BusinessLayer.BusinessProcessors
 
          public async Task<int> GetMaxID(string tableName)
         {
-            using (DAL DB = new DAL())
+            using (DAL DB = new DAL(_connectionString))
             {
                 return await DB.ExecScalar<int>($"EXEC GetMaxID '{tableName}'");
             }
@@ -49,7 +56,7 @@ namespace BusinessLayer.BusinessProcessors
 
 		public async Task<int> Delete(int id)
 		{
-			using DAL DB = new DAL();
+			using DAL DB = new DAL(_connectionString);
             return await DB.ExecNonQuery($"EXEC Client_Delete @ID = {id}");
 		}
 	}

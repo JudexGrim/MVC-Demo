@@ -5,15 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer.BusinessProcessors;
+using CoreLib;
+using Microsoft.Extensions.Configuration;
 
 namespace ProviderLayer.Processors
 {
-    public class BillProcessor : IProviderProcessor<BillHeader>
+    public class BillProcessor : Disposer, IProviderProcessor<BillHeader>
     {
+        private IConfiguration _configuration;
+
+        public BillProcessor(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         
         public async Task<(IEnumerable<BillHeader>, object ReturnData)> GetAll()
         {
-            using BillBusiness billBusiness = new BillBusiness();
+            using BillBusiness billBusiness = new BillBusiness(_configuration);
             var headerResult = await billBusiness.GetAll();
             var DetailResult = await billBusiness.GetDetails();
 
@@ -44,7 +52,7 @@ namespace ProviderLayer.Processors
 
         public async Task<(bool success, object ReturnData)> Update(BillHeader parameters)
         {
-            using BillBusiness billBusiness = new BillBusiness();
+            using BillBusiness billBusiness = new BillBusiness(_configuration);
 
             var EnityDetails = new List<EntityModels.Bills.BillDetail>();
             foreach (var detail in parameters.Details)
@@ -76,7 +84,7 @@ namespace ProviderLayer.Processors
     
         public async Task<bool> Delete(int id)
         {
-            using BillBusiness billBusiness = new BillBusiness();
+            using BillBusiness billBusiness = new BillBusiness(_configuration);
             return await billBusiness.Delete(id) != 0;
         }
 
