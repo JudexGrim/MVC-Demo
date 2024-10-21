@@ -27,4 +27,4 @@ jobs:
       run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/mvc-demo:$(date +%s)
 
     - name: Push The Image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/mvc-demo:$(date +%s)
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/mvc-demo:$(date +%s) 
