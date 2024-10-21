@@ -13,6 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: login
+    - uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+    
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag mvc-demo:$(date +%s) && docker push mvc-demo:$(date +%s) judexgrim/mvc-demo:$(date +%s)
+      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/mvc-demo:$(date +%s)
+
+    - name: Push The Image
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/mvc-demo:$(date +%s)
