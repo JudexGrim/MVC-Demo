@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\Sass\\Styles.css"
     },
     {
+      "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Styles.css.map",
+      "PackagePath": "staticwebassets\\Sass\\Styles.css.map"
+    },
+    {
       "Id": "C:\\Users\\USER\\Documents\\GitHub Repos\\MVC-Demo\\Bruh1\\wwwroot\\Sass\\Styles.min.css",
       "PackagePath": "staticwebassets\\Sass\\Styles.min.css"
     },

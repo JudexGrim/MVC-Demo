@@ -47,7 +47,6 @@ C:\Users\mohammad\Desktop\New folder\MVC-Demo\ProviderLayer\obj\Debug\net8.0\Pro
 C:\Users\mohammad\Desktop\New folder\MVC-Demo\ProviderLayer\obj\Debug\net8.0\refint\ProviderLayer.dll
 C:\Users\mohammad\Desktop\New folder\MVC-Demo\ProviderLayer\obj\Debug\net8.0\ProviderLayer.pdb
 C:\Users\mohammad\Desktop\New folder\MVC-Demo\ProviderLayer\obj\Debug\net8.0\ref\ProviderLayer.dll
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\ProviderLayer\bin\Debug\net8.0\appsettings.json
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\ProviderLayer\bin\Debug\net8.0\ProviderLayer.deps.json
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\ProviderLayer\bin\Debug\net8.0\ProviderLayer.dll
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\ProviderLayer\bin\Debug\net8.0\ProviderLayer.pdb

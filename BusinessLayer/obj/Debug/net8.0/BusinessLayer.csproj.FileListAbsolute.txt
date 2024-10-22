@@ -41,7 +41,6 @@ C:\Users\mohammad\Desktop\New folder\MVC-Demo\BusinessLayer\obj\Debug\net8.0\Bus
 C:\Users\mohammad\Desktop\New folder\MVC-Demo\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
 C:\Users\mohammad\Desktop\New folder\MVC-Demo\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
 C:\Users\mohammad\Desktop\New folder\MVC-Demo\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
-C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\appsettings.json
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\BusinessLayer.deps.json
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\BusinessLayer.dll
 C:\Users\USER\Documents\GitHub Repos\MVC-Demo\BusinessLayer\bin\Debug\net8.0\BusinessLayer.pdb
